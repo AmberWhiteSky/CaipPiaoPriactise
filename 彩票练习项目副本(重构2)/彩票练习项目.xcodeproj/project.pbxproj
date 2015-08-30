@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C078CF81B93398200C8BBC2 /* AmNavigationController.m */; };
+		3CEAE5C01B91921600C0C3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5BF1B91921600C0C3B2 /* main.m */; };
+		3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */; };
+		3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C71B91921600C0C3B2 /* Main.storyboard */; };
+		3CEAE5CB1B91921600C0C3B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5CA1B91921600C0C3B2 /* Images.xcassets */; };
+		3CEAE5CE1B91921600C0C3B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5CC1B91921600C0C3B2 /* LaunchScreen.xib */; };
+		3CEAE5DA1B91921600C0C3B2 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5D91B91921600C0C3B2 /* ______Tests.m */; };
+		3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5F41B91D58200C0C3B2 /* AmTabBar.m */; };
+		3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */; };
+		3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CEAE5D41B91921600C0C3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CEAE5B21B91921600C0C3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CEAE5B91B91921600C0C3B2;
+			remoteInfo = "彩票练习项目";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C078CF51B9330E700C8BBC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3C078CF61B9331ED00C8BBC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		3C078CF71B93398200C8BBC2 /* AmNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmNavigationController.h; sourceTree = "<group>"; };
+		3C078CF81B93398200C8BBC2 /* AmNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmNavigationController.m; sourceTree = "<group>"; };
+		3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAE5BE1B91921600C0C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEAE5BF1B91921600C0C3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3CEAE5C11B91921600C0C3B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3CEAE5C81B91921600C0C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CEAE5CA1B91921600C0C3B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CEAE5CD1B91921600C0C3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3CEAE5D31B91921600C0C3B2 /* 彩票练习项目Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "彩票练习项目Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAE5D81B91921600C0C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CEAE5D91B91921600C0C3B2 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		3CEAE5F31B91D58200C0C3B2 /* AmTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTabBar.h; sourceTree = "<group>"; };
+		3CEAE5F41B91D58200C0C3B2 /* AmTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBar.m; sourceTree = "<group>"; };
+		3CEAE6021B91D8D500C0C3B2 /* AmTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTabBarController.h; sourceTree = "<group>"; };
+		3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarController.m; sourceTree = "<group>"; };
+		3CEAE6081B91EB1F00C0C3B2 /* AmTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTabBarButton.h; sourceTree = "<group>"; };
+		3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CEAE5B71B91921600C0C3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAE5D01B91921600C0C3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CEAE5B11B91921600C0C3B2 = {
+			isa = PBXGroup;
+			children = (
+				3C078CF51B9330E700C8BBC2 /* PrefixHeader.pch */,
+				3CEAE5BC1B91921600C0C3B2 /* 彩票练习项目 */,
+				3CEAE5D61B91921600C0C3B2 /* 彩票练习项目Tests */,
+				3CEAE5BB1B91921600C0C3B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CEAE5BB1B91921600C0C3B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */,
+				3CEAE5D31B91921600C0C3B2 /* 彩票练习项目Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CEAE5BC1B91921600C0C3B2 /* 彩票练习项目 */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5E31B91942A00C0C3B2 /* Class */,
+				3CEAE5C11B91921600C0C3B2 /* AppDelegate.h */,
+				3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */,
+				3CEAE5BD1B91921600C0C3B2 /* Supporting Files */,
+			);
+			path = "彩票练习项目";
+			sourceTree = "<group>";
+		};
+		3CEAE5BD1B91921600C0C3B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5CC1B91921600C0C3B2 /* LaunchScreen.xib */,
+				3CEAE5C71B91921600C0C3B2 /* Main.storyboard */,
+				3CEAE5CA1B91921600C0C3B2 /* Images.xcassets */,
+				3CEAE5BE1B91921600C0C3B2 /* Info.plist */,
+				3CEAE5BF1B91921600C0C3B2 /* main.m */,
+				3C078CF61B9331ED00C8BBC2 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CEAE5D61B91921600C0C3B2 /* 彩票练习项目Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5D91B91921600C0C3B2 /* ______Tests.m */,
+				3CEAE5D71B91921600C0C3B2 /* Supporting Files */,
+			);
+			path = "彩票练习项目Tests";
+			sourceTree = "<group>";
+		};
+		3CEAE5D71B91921600C0C3B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5D81B91921600C0C3B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CEAE5E31B91942A00C0C3B2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5E91B91D44900C0C3B2 /* Main(主要东西) */,
+				3CEAE5E81B91D42100C0C3B2 /* Setting(设置) */,
+				3CEAE5E71B91D40C00C0C3B2 /* Home(购彩大厅) */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		3CEAE5E71B91D40C00C0C3B2 /* Home(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5F21B91D4B000C0C3B2 /* Model */,
+				3CEAE5F11B91D4A800C0C3B2 /* Controller */,
+				3CEAE5F01B91D4A300C0C3B2 /* View */,
+			);
+			name = "Home(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		3CEAE5E81B91D42100C0C3B2 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5EF1B91D49E00C0C3B2 /* View */,
+				3CEAE5EE1B91D49700C0C3B2 /* Model */,
+				3CEAE5ED1B91D49000C0C3B2 /* Controller */,
+			);
+			name = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		3CEAE5E91B91D44900C0C3B2 /* Main(主要东西) */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5EC1B91D47300C0C3B2 /* Controller */,
+				3CEAE5EB1B91D46B00C0C3B2 /* View */,
+				3CEAE5EA1B91D45E00C0C3B2 /* Model */,
+			);
+			name = "Main(主要东西)";
+			sourceTree = "<group>";
+		};
+		3CEAE5EA1B91D45E00C0C3B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3CEAE5EB1B91D46B00C0C3B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE5F31B91D58200C0C3B2 /* AmTabBar.h */,
+				3CEAE5F41B91D58200C0C3B2 /* AmTabBar.m */,
+				3CEAE6081B91EB1F00C0C3B2 /* AmTabBarButton.h */,
+				3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3CEAE5EC1B91D47300C0C3B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CEAE6021B91D8D500C0C3B2 /* AmTabBarController.h */,
+				3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */,
+				3C078CF71B93398200C8BBC2 /* AmNavigationController.h */,
+				3C078CF81B93398200C8BBC2 /* AmNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3CEAE5ED1B91D49000C0C3B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3CEAE5EE1B91D49700C0C3B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3CEAE5EF1B91D49E00C0C3B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3CEAE5F01B91D4A300C0C3B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3CEAE5F11B91D4A800C0C3B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3CEAE5F21B91D4B000C0C3B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CEAE5B91B91921600C0C3B2 /* 彩票练习项目 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEAE5DD1B91921600C0C3B2 /* Build configuration list for PBXNativeTarget "彩票练习项目" */;
+			buildPhases = (
+				3CEAE5B61B91921600C0C3B2 /* Sources */,
+				3CEAE5B71B91921600C0C3B2 /* Frameworks */,
+				3CEAE5B81B91921600C0C3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "彩票练习项目";
+			productName = "彩票练习项目";
+			productReference = 3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CEAE5D21B91921600C0C3B2 /* 彩票练习项目Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CEAE5E01B91921600C0C3B2 /* Build configuration list for PBXNativeTarget "彩票练习项目Tests" */;
+			buildPhases = (
+				3CEAE5CF1B91921600C0C3B2 /* Sources */,
+				3CEAE5D01B91921600C0C3B2 /* Frameworks */,
+				3CEAE5D11B91921600C0C3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CEAE5D51B91921600C0C3B2 /* PBXTargetDependency */,
+			);
+			name = "彩票练习项目Tests";
+			productName = "彩票练习项目Tests";
+			productReference = 3CEAE5D31B91921600C0C3B2 /* 彩票练习项目Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CEAE5B21B91921600C0C3B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AmberWhiteSky;
+				TargetAttributes = {
+					3CEAE5B91B91921600C0C3B2 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3CEAE5D21B91921600C0C3B2 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3CEAE5B91B91921600C0C3B2;
+					};
+				};
+			};
+			buildConfigurationList = 3CEAE5B51B91921600C0C3B2 /* Build configuration list for PBXProject "彩票练习项目" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CEAE5B11B91921600C0C3B2;
+			productRefGroup = 3CEAE5BB1B91921600C0C3B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CEAE5B91B91921600C0C3B2 /* 彩票练习项目 */,
+				3CEAE5D21B91921600C0C3B2 /* 彩票练习项目Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CEAE5B81B91921600C0C3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */,
+				3CEAE5CE1B91921600C0C3B2 /* LaunchScreen.xib in Resources */,
+				3CEAE5CB1B91921600C0C3B2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAE5D11B91921600C0C3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CEAE5B61B91921600C0C3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */,
+				3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */,
+				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
+				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
+				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
+				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CEAE5CF1B91921600C0C3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEAE5DA1B91921600C0C3B2 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CEAE5D51B91921600C0C3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CEAE5B91B91921600C0C3B2 /* 彩票练习项目 */;
+			targetProxy = 3CEAE5D41B91921600C0C3B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3CEAE5C71B91921600C0C3B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEAE5C81B91921600C0C3B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3CEAE5CC1B91921600C0C3B2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CEAE5CD1B91921600C0C3B2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CEAE5DB1B91921600C0C3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3CEAE5DC1B91921600C0C3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CEAE5DE1B91921600C0C3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "彩票练习项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3CEAE5DF1B91921600C0C3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "彩票练习项目/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3CEAE5E11B91921600C0C3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "彩票练习项目Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/彩票练习项目.app/彩票练习项目";
+			};
+			name = Debug;
+		};
+		3CEAE5E21B91921600C0C3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "彩票练习项目Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/彩票练习项目.app/彩票练习项目";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CEAE5B51B91921600C0C3B2 /* Build configuration list for PBXProject "彩票练习项目" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAE5DB1B91921600C0C3B2 /* Debug */,
+				3CEAE5DC1B91921600C0C3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEAE5DD1B91921600C0C3B2 /* Build configuration list for PBXNativeTarget "彩票练习项目" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAE5DE1B91921600C0C3B2 /* Debug */,
+				3CEAE5DF1B91921600C0C3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CEAE5E01B91921600C0C3B2 /* Build configuration list for PBXNativeTarget "彩票练习项目Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CEAE5E11B91921600C0C3B2 /* Debug */,
+				3CEAE5E21B91921600C0C3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CEAE5B21B91921600C0C3B2 /* Project object */;
+}
