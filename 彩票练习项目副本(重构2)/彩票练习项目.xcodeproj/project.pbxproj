@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C078CF81B93398200C8BBC2 /* AmNavigationController.m */; };
+		3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C37327F1B9489F700710BD8 /* AmTitleButton.m */; };
+		3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3732831B94949B00710BD8 /* AllBugViewController.m */; };
 		3CEAE5C01B91921600C0C3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5BF1B91921600C0C3B2 /* main.m */; };
 		3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */; };
 		3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C71B91921600C0C3B2 /* Main.storyboard */; };
@@ -34,6 +36,10 @@
 		3C078CF61B9331ED00C8BBC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		3C078CF71B93398200C8BBC2 /* AmNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmNavigationController.h; sourceTree = "<group>"; };
 		3C078CF81B93398200C8BBC2 /* AmNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmNavigationController.m; sourceTree = "<group>"; };
+		3C37327E1B9489F700710BD8 /* AmTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTitleButton.h; sourceTree = "<group>"; };
+		3C37327F1B9489F700710BD8 /* AmTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTitleButton.m; sourceTree = "<group>"; };
+		3C3732821B94949B00710BD8 /* AllBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBugViewController.h; sourceTree = "<group>"; };
+		3C3732831B94949B00710BD8 /* AllBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBugViewController.m; sourceTree = "<group>"; };
 		3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEAE5BE1B91921600C0C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEAE5BF1B91921600C0C3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +77,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C37327C1B9489BF00710BD8 /* Bug(合买跟单) */ = {
+			isa = PBXGroup;
+			children = (
+				3C3732811B94945200710BD8 /* Controller */,
+				3C37327D1B9489D600710BD8 /* View */,
+			);
+			name = "Bug(合买跟单)";
+			sourceTree = "<group>";
+		};
+		3C37327D1B9489D600710BD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C37327E1B9489F700710BD8 /* AmTitleButton.h */,
+				3C37327F1B9489F700710BD8 /* AmTitleButton.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3C3732811B94945200710BD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C3732821B94949B00710BD8 /* AllBugViewController.h */,
+				3C3732831B94949B00710BD8 /* AllBugViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3CEAE5B11B91921600C0C3B2 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +167,7 @@
 		3CEAE5E31B91942A00C0C3B2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3C37327C1B9489BF00710BD8 /* Bug(合买跟单) */,
 				3CEAE5E91B91D44900C0C3B2 /* Main(主要东西) */,
 				3CEAE5E81B91D42100C0C3B2 /* Setting(设置) */,
 				3CEAE5E71B91D40C00C0C3B2 /* Home(购彩大厅) */,
@@ -347,7 +381,9 @@
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
+				3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */,
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
+				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +514,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,6 +527,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="-1537" y="-1067"/>
         </scene>
-        <!--合买大厅-->
+        <!--All Bug View Controller-->
         <scene sceneID="TfY-VS-AFV">
             <objects>
-                <viewController id="LIV-AX-0QW" sceneMemberID="viewController">
+                <viewController id="LIV-AX-0QW" customClass="AllBugViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UHX-8y-8b1"/>
                         <viewControllerLayoutGuide type="bottom" id="neS-jm-ZbY"/>
@@ -156,7 +156,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43855794749999999" blue="0.29870182760000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="合买大厅" id="HPG-T2-olg"/>
+                    <navigationItem key="navigationItem" id="HPG-T2-olg">
+                        <nil key="title"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xCz-SM-oXT" customClass="AmTitleButton">
+                            <rect key="frame" x="113" y="11" width="94" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title=" 全部彩种" image="YellowDownArrow">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="titleClick:" destination="LIV-AX-0QW" eventType="touchUpInside" id="CAR-1a-HUS"/>
+                            </connections>
+                        </button>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVd-9y-O56" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,19 +186,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqH-yK-gaw">
-                                <rect key="frame" x="153" y="205" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foZ-Zd-rIz">
+                                <rect key="frame" x="185" y="202" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dtJ-fk-zy4" kind="push" id="AGX-A6-jsf"/>
+                                    <segue destination="dtJ-fk-zy4" kind="push" id="Kyb-Fv-BGX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="购彩大厅" id="0zZ-3j-oxI"/>
+                    <navigationItem key="navigationItem" title="购彩大厅" id="0zZ-3j-oxI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="gPc-0Y-W00">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zUO-Uh-FQE">
+                                <rect key="frame" x="255" y="11" width="70" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="资讯" image="zixunBarFlat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDa-Qo-oJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,4 +401,8 @@
             <point key="canvasLocation" x="238" y="-2950"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="YellowDownArrow" width="16" height="16"/>
+        <image name="zixunBarFlat" width="13" height="11"/>
+    </resources>
 </document>
