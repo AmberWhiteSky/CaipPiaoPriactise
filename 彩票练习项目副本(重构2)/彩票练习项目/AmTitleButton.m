@@ -7,6 +7,7 @@
 //
 
 #import "AmTitleButton.h"
+#import <Availability.h>
 
 @interface AmTitleButton ()
 @property (nonatomic ,strong) UIFont *titlefont;
@@ -52,14 +53,21 @@
     CGFloat titleY=0;
     NSDictionary* attrs =@{NSFontAttributeName :self.titlefont};
     
+    
+    //xcode 4  iOS7
+    
     CGFloat titleW;
     if ([[UIDevice  currentDevice].systemVersion doubleValue]>=7.0) {
         //7.0
-        
+        //只有xcode 5才会编译这段代码
+#ifdef __IPHONE_7_0
         titleW=[self.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.width;
+#else
+        titleW=[self.currentTitle sizeWithFont:self.titlefont].width;
+#endif
     }else{
         //7.0以下
-        CGFloat titleW=[self.currentTitle sizeWithFont:self.titlefont].width;
+        titleW=[self.currentTitle sizeWithFont:self.titlefont].width;
         
     }
     CGFloat titleH=contentRect.size.height;

@@ -297,17 +297,17 @@
         <!--我的彩票-->
         <scene sceneID="9vP-Up-ess">
             <objects>
-                <viewController id="8kG-NM-EyE" sceneMemberID="viewController">
+                <viewController id="8kG-NM-EyE" customClass="MineLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sys-9Q-Zvy"/>
                         <viewControllerLayoutGuide type="bottom" id="cjC-ij-eU3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PBa-hG-b0y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kN7-6O-poE">
-                                <rect key="frame" x="95" y="296" width="46" height="30"/>
+                                <rect key="frame" x="258" y="393" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -315,10 +315,25 @@
                                     <segue destination="Od8-7N-hF7" kind="push" id="o1o-or-u3O"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ny1-hq-Vz0">
+                                <rect key="frame" x="10" y="20" width="300" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Dw-CL-SL0">
+                                <rect key="frame" x="10" y="200" width="300" height="35"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <state key="normal" title="登录" backgroundImage="RedButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="我的彩票" id="udA-c9-N0g"/>
+                    <connections>
+                        <outlet property="loginClick" destination="4Dw-CL-SL0" id="yqr-26-B1c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75Z-Jv-Ufb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -335,13 +350,18 @@
                     <view key="view" contentMode="scaleToFill" id="lBn-gT-r3X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="vjG-OY-Esl">
+                                <rect key="frame" x="10" y="64" width="300" height="140"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eea-lt-gNg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3Z-4e-4Ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246" y="907"/>
+            <point key="canvasLocation" x="31" y="859"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="szL-20-DHp">
@@ -402,6 +422,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LoginScreen" width="296" height="138"/>
+        <image name="RedButton" width="61" height="34"/>
         <image name="YellowDownArrow" width="16" height="16"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>

@@ -10,6 +10,8 @@
 		3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C078CF81B93398200C8BBC2 /* AmNavigationController.m */; };
 		3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C37327F1B9489F700710BD8 /* AmTitleButton.m */; };
 		3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3732831B94949B00710BD8 /* AllBugViewController.m */; };
+		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
+		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
 		3CEAE5C01B91921600C0C3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5BF1B91921600C0C3B2 /* main.m */; };
 		3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */; };
 		3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C71B91921600C0C3B2 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 		3C37327F1B9489F700710BD8 /* AmTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTitleButton.m; sourceTree = "<group>"; };
 		3C3732821B94949B00710BD8 /* AllBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBugViewController.h; sourceTree = "<group>"; };
 		3C3732831B94949B00710BD8 /* AllBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBugViewController.m; sourceTree = "<group>"; };
+		3C88581A1B973E2600B74AEC /* MineLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineLoginViewController.h; sourceTree = "<group>"; };
+		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
+		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		3C8858201B9743B000B74AEC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEAE5BE1B91921600C0C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEAE5BF1B91921600C0C3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +108,32 @@
 				3C3732831B94949B00710BD8 /* AllBugViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		3C8858191B973DF600B74AEC /* Mine(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				3C88581D1B973E3000B74AEC /* Controller */,
+			);
+			name = "Mine(我的彩票)";
+			sourceTree = "<group>";
+		};
+		3C88581D1B973E3000B74AEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C88581A1B973E2600B74AEC /* MineLoginViewController.h */,
+				3C88581B1B973E2600B74AEC /* MineLoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3C88581E1B97418B00B74AEC /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				3C88581F1B9743B000B74AEC /* UIImage+Extension.h */,
+				3C8858201B9743B000B74AEC /* UIImage+Extension.m */,
+			);
+			name = "Other(其他)";
 			sourceTree = "<group>";
 		};
 		3CEAE5B11B91921600C0C3B2 = {
@@ -167,6 +199,8 @@
 		3CEAE5E31B91942A00C0C3B2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				3C88581E1B97418B00B74AEC /* Other(其他) */,
+				3C8858191B973DF600B74AEC /* Mine(我的彩票) */,
 				3C37327C1B9489BF00710BD8 /* Bug(合买跟单) */,
 				3CEAE5E91B91D44900C0C3B2 /* Main(主要东西) */,
 				3CEAE5E81B91D42100C0C3B2 /* Setting(设置) */,
@@ -381,7 +415,9 @@
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
+				3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */,
 				3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */,
+				3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */,
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 			);
