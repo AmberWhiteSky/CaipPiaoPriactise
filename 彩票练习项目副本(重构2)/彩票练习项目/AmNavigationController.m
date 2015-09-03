@@ -27,6 +27,8 @@
 +(void)initialize {
     //3.设置导航栏的主题
     UINavigationBar  * Navbar =  [UINavigationBar appearance];
+    
+    Navbar.tintColor =[UIColor  whiteColor];
     //设置背景图片 考拉iOS系统
     if ([[UIDevice  currentDevice].systemVersion doubleValue]>=7.0) {
         //7.0
@@ -45,6 +47,18 @@
     //设置字体大小
     attrs[UITextAttributeFont] =[UIFont  systemFontOfSize:20];
     [Navbar setTitleTextAttributes:attrs];
+    
+    //设置barbuttonitem主题
+    UIBarButtonItem *item =[UIBarButtonItem  appearance];
+    NSMutableDictionary *itemattrs =[NSMutableDictionary  dictionary];
+
+    //设置字体颜色
+    itemattrs[UITextAttributeTextColor] =[UIColor whiteColor];
+    //设置字体大小
+    attrs[UITextAttributeFont] =[UIFont  systemFontOfSize:14];
+
+    //设置文字颜色
+    [item setTitleTextAttributes:itemattrs forState:UIControlStateNormal];
     
 }
 
