@@ -27,12 +27,14 @@
 +(void)initialize {
     //3.设置导航栏的主题
     UINavigationBar  * Navbar =  [UINavigationBar appearance];
+    //iOS6设置整个item的颜色 iOS7设置文字颜色（导航栏的返回键）
     
-    Navbar.tintColor =[UIColor  whiteColor];
     //设置背景图片 考拉iOS系统
     if ([[UIDevice  currentDevice].systemVersion doubleValue]>=7.0) {
         //7.0
         [Navbar setBackgroundImage:[UIImage  imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
+        Navbar.tintColor =[UIColor  whiteColor];
+
     }else{
         //7.0以下
         [Navbar setBackgroundImage:[UIImage  imageNamed:@"NavBar"] forBarMetrics:UIBarMetricsDefault];
@@ -51,14 +53,28 @@
     //设置barbuttonitem主题
     UIBarButtonItem *item =[UIBarButtonItem  appearance];
     NSMutableDictionary *itemattrs =[NSMutableDictionary  dictionary];
-
+    
     //设置字体颜色
     itemattrs[UITextAttributeTextColor] =[UIColor whiteColor];
     //设置字体大小
     attrs[UITextAttributeFont] =[UIFont  systemFontOfSize:14];
-
+    
     //设置文字颜色
     [item setTitleTextAttributes:itemattrs forState:UIControlStateNormal];
+    
+    
+    if (![[UIDevice  currentDevice].systemVersion doubleValue]>=7.0) {
+        //设置按钮背景
+        [item setBackgroundImage:[UIImage  imageNamed:@"NavButton"] forState:UIControlStateNormal  barMetrics:UIBarMetricsDefault];
+        [item setBackgroundImage:[UIImage  imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+        //设置返回按钮
+        [item setBackButtonBackgroundImage:[UIImage  imageNamed:@"NavBackButton"] forState:UIControlStateNormal  barMetrics:UIBarMetricsDefault];
+        [item setBackButtonBackgroundImage:[UIImage  imageNamed:@"NavBackButtonPressed"] forState:UIControlStateHighlighted  barMetrics:UIBarMetricsDefault];
+    }
+    
+    
+    
+    
     
 }
 
@@ -68,7 +84,7 @@
 }
 
 
-
+// 重写这个方法 拦截所有push 的操作
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
     

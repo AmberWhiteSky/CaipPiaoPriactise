@@ -12,6 +12,9 @@
 		3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3732831B94949B00710BD8 /* AllBugViewController.m */; };
 		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
 		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
+		3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E51B9953EE00A56F58 /* AmSettingController.m */; };
+		3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E81B995E4300A56F58 /* SettingItem.m */; };
+		3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307EB1B99637200A56F58 /* AmPushNoticeController.m */; };
 		3CEAE5C01B91921600C0C3B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5BF1B91921600C0C3B2 /* main.m */; };
 		3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C21B91921600C0C3B2 /* AppDelegate.m */; };
 		3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEAE5C71B91921600C0C3B2 /* Main.storyboard */; };
@@ -46,6 +49,12 @@
 		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
 		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		3C8858201B9743B000B74AEC /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		3C9307E41B9953EE00A56F58 /* AmSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmSettingController.h; sourceTree = "<group>"; };
+		3C9307E51B9953EE00A56F58 /* AmSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmSettingController.m; sourceTree = "<group>"; };
+		3C9307E71B995E4300A56F58 /* SettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingItem.h; sourceTree = "<group>"; };
+		3C9307E81B995E4300A56F58 /* SettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingItem.m; sourceTree = "<group>"; };
+		3C9307EA1B99637200A56F58 /* AmPushNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPushNoticeController.h; sourceTree = "<group>"; };
+		3C9307EB1B99637200A56F58 /* AmPushNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPushNoticeController.m; sourceTree = "<group>"; };
 		3CEAE5BA1B91921600C0C3B2 /* 彩票练习项目.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票练习项目.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEAE5BE1B91921600C0C3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEAE5BF1B91921600C0C3B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -271,6 +280,10 @@
 		3CEAE5ED1B91D49000C0C3B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C9307E41B9953EE00A56F58 /* AmSettingController.h */,
+				3C9307E51B9953EE00A56F58 /* AmSettingController.m */,
+				3C9307EA1B99637200A56F58 /* AmPushNoticeController.h */,
+				3C9307EB1B99637200A56F58 /* AmPushNoticeController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -278,6 +291,8 @@
 		3CEAE5EE1B91D49700C0C3B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C9307E71B995E4300A56F58 /* SettingItem.h */,
+				3C9307E81B995E4300A56F58 /* SettingItem.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -413,7 +428,10 @@
 				3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */,
 				3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */,
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
+				3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
+				3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */,
+				3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
 				3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */,
 				3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */,

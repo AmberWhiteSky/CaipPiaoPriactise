@@ -337,7 +337,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="K70-zJ-kna" kind="push" id="9hg-bv-Tdu"/>
+                                    <action selector="loginSetting" destination="8kG-NM-EyE" eventType="touchUpInside" id="sic-Oa-QL0"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -349,74 +349,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75Z-Jv-Ufb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1033" y="674"/>
-        </scene>
-        <!--设置-->
-        <scene sceneID="geA-9q-b0e">
-            <objects>
-                <tableViewController id="K70-zJ-kna" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="t7L-nk-Qqt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection id="KH2-F3-iIG">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ebA-ml-Tvc" imageView="15H-Jc-HWI" style="IBUITableViewCellStyleDefault" id="1Zc-Ul-dPP">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Zc-Ul-dPP" id="0jr-so-ifc">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="推送" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ebA-ml-Tvc">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MorePush" id="15H-Jc-HWI">
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jfn-Tj-cqd">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jfn-Tj-cqd" id="gls-ft-rRK">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="机选" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNe-W4-MR1">
-                                                    <rect key="frame" x="76" y="9" width="34" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handShake" translatesAutoresizingMaskIntoConstraints="NO" id="mQQ-nO-Q10">
-                                                    <rect key="frame" x="16" y="8" width="40" height="22"/>
-                                                </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPs-65-69D">
-                                                    <rect key="frame" x="253" y="4" width="51" height="31"/>
-                                                </switch>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Zgm-pq-ftH">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zgm-pq-ftH" id="055-tN-PSW">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="K70-zJ-kna" id="UaP-rX-krF"/>
-                            <outlet property="delegate" destination="K70-zJ-kna" id="Led-7p-D7r"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="设置" id="BEE-iy-3pk"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kWC-dB-XT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-555" y="691"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="szL-20-DHp">
@@ -478,10 +410,8 @@
     </scenes>
     <resources>
         <image name="LoginScreen" width="296" height="138"/>
-        <image name="MorePush" width="19" height="21"/>
         <image name="RedButton" width="61" height="34"/>
         <image name="YellowDownArrow" width="16" height="16"/>
-        <image name="handShake" width="23" height="21"/>
         <image name="zixunBarFlat" width="13" height="11"/>
     </resources>
 </document>

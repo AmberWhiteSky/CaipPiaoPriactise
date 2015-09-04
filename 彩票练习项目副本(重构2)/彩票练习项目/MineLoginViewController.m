@@ -8,9 +8,11 @@
 
 #import "MineLoginViewController.h"
 #import "UIImage+Extension.h"
+#import "AmSettingController.h"
 
 @interface MineLoginViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *loginClick;
+- (IBAction)loginSetting;
 
 @end
 
@@ -53,4 +55,11 @@
  }
  */
 
+
+//设置按钮点击跳转方法
+- (IBAction)loginSetting {
+    AmSettingController *settingController =[[AmSettingController alloc]init];
+    
+    [self.navigationController pushViewController:settingController animated:YES];
+}
 @end
