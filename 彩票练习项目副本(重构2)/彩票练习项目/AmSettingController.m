@@ -7,7 +7,8 @@
 //
 
 #import "AmSettingController.h"
-#import "SettingItem.h"
+#import "SettingArrowItem.h"
+#import "SettingSwitchItem.h"
 #import "GroupSetting.h"
 #import "Test1Controller.h"
 #import "Test2Controller.h"
@@ -44,21 +45,21 @@
         
         
         //1组
-        SettingItem *item001 =[SettingItem  itemWithIcon:@"MorePush" title:@"one" destvcClass:[Test1Controller class]];
-        SettingItem *item002 =[SettingItem  itemWithIcon:@"MorePush" title:@"two" destvcClass:[Test2Controller class]];
+        SettingItem *pushNotice =[SettingArrowItem  itemWithIcon:@"MorePush" title:@"推送和提醒" destvcClass:[Test1Controller class]];
+        SettingItem *handShake =[SettingSwitchItem  itemWithIcon:@"handShake" title:@"摇一摇机选" ];
+        SettingItem *sound_Effect =[SettingSwitchItem  itemWithIcon:@"sound_Effect" title:@"声音效果"];
         
         GroupSetting *group0 = [[GroupSetting  alloc] init];
-        group0.items =@[item001,item002];
-        group0.header=@"HAHA";
-        group0.footer =@"footer";
+        group0.items =@[pushNotice,handShake,sound_Effect];
         [_data  addObject:group0];
         
         
         //2组
-        SettingItem *item2 =[SettingItem  itemWithIcon:@"MorePush" title:@"three" destvcClass:[Test2Controller class]];
+        SettingItem *MoreUpdate =[SettingArrowItem  itemWithIcon:@"MoreUpdate" title:@"检查新版本" destvcClass:[Test1Controller class]];
+        
+        SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[Test1Controller class]];
         GroupSetting *group2 = [[GroupSetting  alloc] init];
-        group2.items =@[item001];
-        group2.header=@"HAHA";
+        group2.items =@[MoreUpdate,help];
         [_data  addObject:group2];
         
         
@@ -144,8 +145,16 @@
     
     GroupSetting * group = self.data[indexPath.section];
     SettingItem *item = group.items[indexPath.row];
-    UIViewController *vc =[[item.destvcClass alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    
+    if ([item isKindOfClass:[SettingArrowItem  class]]) {//箭头
+        SettingArrowItem * arrowitem = (SettingArrowItem *)item;
+        if (arrowitem.destvcClass ==nil)
+            //如果没有需要跳转的控制器 直接返回
+            return;
+        UIViewController *vc =[[arrowitem.destvcClass alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+
+    }
     
 }
 

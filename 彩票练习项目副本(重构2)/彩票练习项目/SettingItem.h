@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+//枚举
+//typedef enum {
+//    SettingItemTypeArrow,
+//    SettingItemTypeSwitch
+//    
+//}SettingItemType;
+
+
+
 @interface SettingItem : NSObject
 
 // 图标
@@ -15,11 +24,10 @@
 //标题
 @property(nonatomic,copy)  NSString *title;
 
-//点击这行cell 需要跳转控制器
-@property(nonatomic,assign)  Class  destvcClass;
 
 
-+(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title  destvcClass:(Class) destvcClass;
+//不用跳转的方法
++(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title ;
 
 
 @end

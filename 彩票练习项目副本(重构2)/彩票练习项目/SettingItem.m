@@ -9,15 +9,14 @@
 #import "SettingItem.h"
 
 @implementation SettingItem
-+(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title  destvcClass:(Class) destvcClass {
-    
+
+
++(instancetype)itemWithIcon:(NSString *)icon title:(NSString *)title {
     
     SettingItem *item =[[self  alloc]init];
     item.icon =icon;
     item.title =title;
-    item.destvcClass = destvcClass;
     return item;
-  
 }
 
 @end
