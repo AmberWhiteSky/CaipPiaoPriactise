@@ -8,7 +8,10 @@
 
 #import "AmSettingController.h"
 #import "SettingItem.h"
-#import "AmPushNoticeController.h"
+#import "GroupSetting.h"
+#import "Test1Controller.h"
+#import "Test2Controller.h"
+#import "CustomCell.h"
 
 @interface AmSettingController ()
 
@@ -21,31 +24,43 @@
 
 -(id)init {
     return  [super  initWithStyle:UITableViewStyleGrouped];
-
+    
 }
 
 -(id)initWithStyle:(UITableViewStyle)style {
     return [super  initWithStyle:UITableViewStyleGrouped];
-
+    
 }
 
 - (NSMutableArray *)data {
     if (_data==nil) {
         _data =[NSMutableArray  array];
         //0组
-        SettingItem *item00 = [SettingItem  itemWithIcon:@"MorePush" title:@"推送和提醒" vcClass:[AmPushNoticeController class]];
-         SettingItem *item01 = [SettingItem  itemWithIcon:@"handShake" title:@"推送和提醒22" vcClass:[AmPushNoticeController class]];
-        NSArray  *array0 =@[item00,item01];
-        
-        
-        
+        //        SettingItem *item00 = [SettingItem  itemWithIcon:@"MorePush" title:@"推送和提醒" vcClass:[AmPushNoticeController class]];
+        //         SettingItem *item01 = [SettingItem  itemWithIcon:@"handShake" title:@"推送和提醒22" vcClass:[AmPushNoticeController class]];
         //1 组
-         SettingItem *item10 = [SettingItem  itemWithIcon:@"IDInfo" title:@"推送和提醒333" vcClass:[AmPushNoticeController class]];
-        NSArray  *array1 =@[item10];
-
-        [_data addObject:array0];
-        [_data addObject:array1];
-
+        //         SettingItem *item10 = [SettingItem  itemWithIcon:@"IDInfo" title:@"推送和提醒333" vcClass:[AmPushNoticeController class]];
+        
+        
+        
+        //1组
+        SettingItem *item001 =[SettingItem  itemWithIcon:@"MorePush" title:@"one" destvcClass:[Test1Controller class]];
+        SettingItem *item002 =[SettingItem  itemWithIcon:@"MorePush" title:@"two" destvcClass:[Test2Controller class]];
+        
+        GroupSetting *group0 = [[GroupSetting  alloc] init];
+        group0.items =@[item001,item002];
+        group0.header=@"HAHA";
+        group0.footer =@"footer";
+        [_data  addObject:group0];
+        
+        
+        //2组
+        SettingItem *item2 =[SettingItem  itemWithIcon:@"MorePush" title:@"three" destvcClass:[Test2Controller class]];
+        GroupSetting *group2 = [[GroupSetting  alloc] init];
+        group2.items =@[item001];
+        group2.header=@"HAHA";
+        [_data  addObject:group2];
+        
         
     }
     return  _data;
@@ -79,8 +94,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    NSArray  *subdata = self.data[section];
-    return  subdata.count;
+    //    NSArray  *subdata = self.data[section];
+    //    return  subdata.count;
+    
+    GroupSetting  *group =self.data[section];
+    return  group.items.count;
 }
 
 
@@ -88,70 +106,62 @@
     
     // Configure the cell...
     //创建cell
-    static NSString *ID =@"setting";
-    UITableViewCell *cell = [tableView  dequeueReusableCellWithIdentifier:ID];
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
+    //    static NSString *ID =@"setting";
+    //    UITableViewCell *cell = [tableView  dequeueReusableCellWithIdentifier:ID];
+    //    if (cell==nil) {
+    //        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    //    }
     //2.设置cell数据
-    SettingItem  *item =self.data [indexPath.section][indexPath.row];
-    cell.imageView.image = [UIImage  imageNamed:item.icon];
-    cell.textLabel.text =item.title;
+    //    SettingItem  *item =self.data [indexPath.section][indexPath.row];
+    //    cell.imageView.image = [UIImage  imageNamed:item.icon];
+    //    cell.textLabel.text =item.title;
     
+    //1.创建cell
+    CustomCell *cell =[CustomCell  cellWithTableView:tableView];
     
-    
-    
+    //2.给cell传递模型数据
+    GroupSetting * group = self.data[indexPath.section];
+    //    SettingItem *item = group.items[indexPath.row];
+    cell.item =group.items[indexPath.row];
+    //3返回cell
     return cell;
+    
+    //
+    //    cell.imageView.image =[UIImage imageNamed:item.icon];
+    //    cell.textLabel.text=item.title;
+    
+    
+    
+    
+    
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    SettingItem  *item = self.data[indexPath.section][indexPath.row];
-    UIViewController  *vc  =[[item.vcClass  alloc]init];
+    
+    //    SettingItem  *item = self.data[indexPath.section][indexPath.row];
+    //    UIViewController  *vc  =[[item.destvcClass  alloc]init];
+    //    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+    GroupSetting * group = self.data[indexPath.section];
+    SettingItem *item = group.items[indexPath.row];
+    UIViewController *vc =[[item.destvcClass alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+//tableview的 header
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    GroupSetting *group =self.data[section];
+    return  group.header;
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+//tableview的 footer
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    GroupSetting *group =self.data[section];
+    return  group.footer;
+    
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

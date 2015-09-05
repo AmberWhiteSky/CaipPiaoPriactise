@@ -16,10 +16,10 @@
 @property(nonatomic,copy)  NSString *title;
 
 //点击这行cell 需要跳转控制器
-@property(nonatomic,assign)  Class  vcClass;
+@property(nonatomic,assign)  Class  destvcClass;
 
 
-+(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title  vcClass:(Class) vcClass;
++(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title  destvcClass:(Class) destvcClass;
 
 
 @end

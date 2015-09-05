@@ -24,6 +24,12 @@
 		3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5F41B91D58200C0C3B2 /* AmTabBar.m */; };
 		3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */; };
 		3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */; };
+		3CF4DA541B9AA1740059E82B /* GroupSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA531B9AA1740059E82B /* GroupSetting.m */; };
+		3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA561B9AA4700059E82B /* Test1Controller.m */; };
+		3CF4DA591B9AA4700059E82B /* Test1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4DA571B9AA4700059E82B /* Test1Controller.xib */; };
+		3CF4DA5D1B9AA4B50059E82B /* Test2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA5B1B9AA4B50059E82B /* Test2Controller.m */; };
+		3CF4DA5E1B9AA4B50059E82B /* Test2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4DA5C1B9AA4B50059E82B /* Test2Controller.xib */; };
+		3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA601B9AAFD80059E82B /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,16 @@
 		3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarController.m; sourceTree = "<group>"; };
 		3CEAE6081B91EB1F00C0C3B2 /* AmTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTabBarButton.h; sourceTree = "<group>"; };
 		3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarButton.m; sourceTree = "<group>"; };
+		3CF4DA521B9AA1740059E82B /* GroupSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSetting.h; sourceTree = "<group>"; };
+		3CF4DA531B9AA1740059E82B /* GroupSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSetting.m; sourceTree = "<group>"; };
+		3CF4DA551B9AA4700059E82B /* Test1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1Controller.h; sourceTree = "<group>"; };
+		3CF4DA561B9AA4700059E82B /* Test1Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1Controller.m; sourceTree = "<group>"; };
+		3CF4DA571B9AA4700059E82B /* Test1Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test1Controller.xib; sourceTree = "<group>"; };
+		3CF4DA5A1B9AA4B50059E82B /* Test2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2Controller.h; sourceTree = "<group>"; };
+		3CF4DA5B1B9AA4B50059E82B /* Test2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2Controller.m; sourceTree = "<group>"; };
+		3CF4DA5C1B9AA4B50059E82B /* Test2Controller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test2Controller.xib; sourceTree = "<group>"; };
+		3CF4DA5F1B9AAFD80059E82B /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		3CF4DA601B9AAFD80059E82B /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +300,12 @@
 				3C9307E51B9953EE00A56F58 /* AmSettingController.m */,
 				3C9307EA1B99637200A56F58 /* AmPushNoticeController.h */,
 				3C9307EB1B99637200A56F58 /* AmPushNoticeController.m */,
+				3CF4DA551B9AA4700059E82B /* Test1Controller.h */,
+				3CF4DA561B9AA4700059E82B /* Test1Controller.m */,
+				3CF4DA571B9AA4700059E82B /* Test1Controller.xib */,
+				3CF4DA5A1B9AA4B50059E82B /* Test2Controller.h */,
+				3CF4DA5B1B9AA4B50059E82B /* Test2Controller.m */,
+				3CF4DA5C1B9AA4B50059E82B /* Test2Controller.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -293,6 +315,8 @@
 			children = (
 				3C9307E71B995E4300A56F58 /* SettingItem.h */,
 				3C9307E81B995E4300A56F58 /* SettingItem.m */,
+				3CF4DA521B9AA1740059E82B /* GroupSetting.h */,
+				3CF4DA531B9AA1740059E82B /* GroupSetting.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -300,6 +324,8 @@
 		3CEAE5EF1B91D49E00C0C3B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CF4DA5F1B9AAFD80059E82B /* CustomCell.h */,
+				3CF4DA601B9AAFD80059E82B /* CustomCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -406,6 +432,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */,
+				3CF4DA5E1B9AA4B50059E82B /* Test2Controller.xib in Resources */,
+				3CF4DA591B9AA4700059E82B /* Test1Controller.xib in Resources */,
 				3CEAE5CE1B91921600C0C3B2 /* LaunchScreen.xib in Resources */,
 				3CEAE5CB1B91921600C0C3B2 /* Images.xcassets in Resources */,
 			);
@@ -425,12 +453,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF4DA541B9AA1740059E82B /* GroupSetting.m in Sources */,
 				3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */,
+				3CF4DA5D1B9AA4B50059E82B /* Test2Controller.m in Sources */,
 				3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */,
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
 				3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
 				3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */,
+				3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */,
 				3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
 				3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */,
@@ -438,6 +469,7 @@
 				3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */,
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
+				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
