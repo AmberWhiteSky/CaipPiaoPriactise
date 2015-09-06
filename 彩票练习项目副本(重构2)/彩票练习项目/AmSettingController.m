@@ -13,7 +13,7 @@
 #import "Test1Controller.h"
 #import "Test2Controller.h"
 #import "CustomCell.h"
-
+#import "MBProgressHUD+MJ.h"
 @interface AmSettingController ()
 
 @property(nonatomic,strong) NSMutableArray *data;
@@ -58,14 +58,23 @@
         SettingItem *MoreUpdate =[SettingItem  itemWithIcon:@"MoreUpdate" title:@"检查新版本"];
         MoreUpdate.option =^{
             NSLog(@"检查新版本");
-                       
-            
+            [MBProgressHUD  showMessage:@"正在检查中"];
+#warning 发送网络请求去检查有没有最新版本
+            //几秒钟后消失
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                //移除hub
+                [MBProgressHUD  hideHUD  ];
+                
+                //提醒没有新版本
+                [MBProgressHUD  showError:@"没有新版本"];
+                
+            });
         };
         
         SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[Test1Controller class]];
-//        help.option =^{
-//            NSLog(@"帮助");
-//        };
+        //        help.option =^{
+        //            NSLog(@"帮助");
+        //        };
         GroupSetting *group2 = [[GroupSetting  alloc] init];
         group2.items =@[MoreUpdate,help];
         [_data  addObject:group2];

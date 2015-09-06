@@ -10,7 +10,9 @@
 		3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C078CF81B93398200C8BBC2 /* AmNavigationController.m */; };
 		3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C37327F1B9489F700710BD8 /* AmTitleButton.m */; };
 		3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3732831B94949B00710BD8 /* AllBugViewController.m */; };
-		3C37CDBD1B9C78C300173E15 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 3C37CDBC1B9C78C300173E15 /* MBProgressHUD */; };
+		3C7B63F01B9C819700A48333 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EC1B9C819700A48333 /* MBProgressHUD+MJ.m */; };
+		3C7B63F11B9C819700A48333 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */; };
+		3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */; };
 		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
 		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
 		3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E51B9953EE00A56F58 /* AmSettingController.m */; };
@@ -54,7 +56,11 @@
 		3C37327F1B9489F700710BD8 /* AmTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTitleButton.m; sourceTree = "<group>"; };
 		3C3732821B94949B00710BD8 /* AllBugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBugViewController.h; sourceTree = "<group>"; };
 		3C3732831B94949B00710BD8 /* AllBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBugViewController.m; sourceTree = "<group>"; };
-		3C37CDBC1B9C78C300173E15 /* MBProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MBProgressHUD; sourceTree = "<group>"; };
+		3C7B63EB1B9C819700A48333 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		3C7B63EC1B9C819700A48333 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		3C7B63EE1B9C819700A48333 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		3C88581A1B973E2600B74AEC /* MineLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineLoginViewController.h; sourceTree = "<group>"; };
 		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
 		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -143,12 +149,24 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		3C37CDB81B9C76BD00173E15 /* Lib */ = {
+		3C37CDBE1B9C80E200173E15 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				3C37CDBC1B9C78C300173E15 /* MBProgressHUD */,
+				3C7B63EA1B9C819700A48333 /* MBProgressHUD */,
 			);
 			name = Lib;
+			sourceTree = "<group>";
+		};
+		3C7B63EA1B9C819700A48333 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B63EB1B9C819700A48333 /* MBProgressHUD+MJ.h */,
+				3C7B63EC1B9C819700A48333 /* MBProgressHUD+MJ.m */,
+				3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */,
+				3C7B63EE1B9C819700A48333 /* MBProgressHUD.h */,
+				3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		3C8858191B973DF600B74AEC /* Mine(我的彩票) */ = {
@@ -240,7 +258,7 @@
 		3CEAE5E31B91942A00C0C3B2 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				3C37CDB81B9C76BD00173E15 /* Lib */,
+				3C37CDBE1B9C80E200173E15 /* Lib */,
 				3C88581E1B97418B00B74AEC /* Other(其他) */,
 				3C8858191B973DF600B74AEC /* Mine(我的彩票) */,
 				3C37327C1B9489BF00710BD8 /* Bug(合买跟单) */,
@@ -452,12 +470,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C37CDBD1B9C78C300173E15 /* MBProgressHUD in Resources */,
 				3CEAE5C91B91921600C0C3B2 /* Main.storyboard in Resources */,
 				3CF4DA5E1B9AA4B50059E82B /* Test2Controller.xib in Resources */,
 				3CF4DA591B9AA4700059E82B /* Test1Controller.xib in Resources */,
 				3CEAE5CE1B91921600C0C3B2 /* LaunchScreen.xib in Resources */,
 				3CEAE5CB1B91921600C0C3B2 /* Images.xcassets in Resources */,
+				3C7B63F11B9C819700A48333 /* MBProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +506,11 @@
 				3CF4DA641B9B24120059E82B /* SettingArrowItem.m in Sources */,
 				3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
+				3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */,
 				3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */,
 				3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */,
 				3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */,
+				3C7B63F01B9C819700A48333 /* MBProgressHUD+MJ.m in Sources */,
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
