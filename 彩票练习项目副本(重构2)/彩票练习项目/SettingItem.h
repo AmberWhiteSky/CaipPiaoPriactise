@@ -15,6 +15,8 @@
 //    
 //}SettingItemType;
 
+typedef  void (^SettingItemOption)();
+
 
 
 @interface SettingItem : NSObject
@@ -23,6 +25,9 @@
 @property(nonatomic,copy)  NSString *icon;
 //标题
 @property(nonatomic,copy)  NSString *title;
+
+//点击那个cell 需要做什么事情
+@property(nonatomic,copy) SettingItemOption  option;
 
 
 

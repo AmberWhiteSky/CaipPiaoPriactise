@@ -55,9 +55,17 @@
         
         
         //2组
-        SettingItem *MoreUpdate =[SettingArrowItem  itemWithIcon:@"MoreUpdate" title:@"检查新版本" destvcClass:[Test1Controller class]];
+        SettingItem *MoreUpdate =[SettingItem  itemWithIcon:@"MoreUpdate" title:@"检查新版本"];
+        MoreUpdate.option =^{
+            NSLog(@"检查新版本");
+                       
+            
+        };
         
         SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[Test1Controller class]];
+//        help.option =^{
+//            NSLog(@"帮助");
+//        };
         GroupSetting *group2 = [[GroupSetting  alloc] init];
         group2.items =@[MoreUpdate,help];
         [_data  addObject:group2];
@@ -146,14 +154,15 @@
     GroupSetting * group = self.data[indexPath.section];
     SettingItem *item = group.items[indexPath.row];
     
-    if ([item isKindOfClass:[SettingArrowItem  class]]) {//箭头
+    if (item.option) {//block 有值（点击这个cell 有特定的操作需要执行）
+        item.option();
+    }else if ([item isKindOfClass:[SettingArrowItem  class]]) {//箭头
         SettingArrowItem * arrowitem = (SettingArrowItem *)item;
         if (arrowitem.destvcClass ==nil)
             //如果没有需要跳转的控制器 直接返回
             return;
         UIViewController *vc =[[arrowitem.destvcClass alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
-
     }
     
 }
