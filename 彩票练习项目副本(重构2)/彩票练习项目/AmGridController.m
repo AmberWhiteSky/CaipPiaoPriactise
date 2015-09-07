@@ -4,10 +4,10 @@
 //
 //  Created by AmberWhiteSky on 15/9/7.
 //  Copyright (c) 2015年 AmberWhiteSky. All rights reserved.
-/**  
+/**
  UICollectionView must be initialized with a non-nil layout parameter'
-
-必须用一个非nil的layout 参数来初始化 UICollectionView 
+ 
+ 必须用一个非nil的layout 参数来初始化 UICollectionView
  
  **/
 //  九宫格的界面 产品
@@ -18,12 +18,28 @@
 #import "AmGridController.h"
 
 @interface AmGridController ()
+@property(nonatomic,strong) NSArray *products;
 
 @end
 
 @implementation AmGridController
 
 static NSString * const reuseIdentifier = @"Cell";
+
+
+//懒加载
+- (NSArray *)products {
+    if (_products==nil) {
+        NSMutableArray *productArray =[NSMutableArray  array];
+        
+        
+        
+        _products =productArray;
+        
+    }
+    return  _products;
+    
+}
 
 
 -(id)init {
@@ -56,14 +72,14 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -99,32 +115,32 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 
 /*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+ // Uncomment this method to specify if the specified item should be highlighted during tracking
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
 	return YES;
-}
-*/
+ }
+ */
 
 /*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
+ // Uncomment this method to specify if the specified item should be selected
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+ return YES;
+ }
+ */
 
 /*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+ // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+ - (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
 	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+ }
+ 
+ - (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
 	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+ }
+ 
+ - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
 	
-}
-*/
+ }
+ */
 
 @end

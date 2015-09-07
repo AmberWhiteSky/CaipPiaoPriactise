@@ -14,6 +14,7 @@
 		3C7B63F11B9C819700A48333 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */; };
 		3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */; };
 		3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8463751B9DC95B0051AF3E /* AmGridController.m */; };
+		3C84637A1B9DD9900051AF3E /* AmProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8463791B9DD9900051AF3E /* AmProduct.m */; };
 		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
 		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
 		3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E51B9953EE00A56F58 /* AmSettingController.m */; };
@@ -64,6 +65,8 @@
 		3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		3C8463741B9DC95B0051AF3E /* AmGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGridController.h; sourceTree = "<group>"; };
 		3C8463751B9DC95B0051AF3E /* AmGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGridController.m; sourceTree = "<group>"; };
+		3C8463781B9DD9900051AF3E /* AmProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmProduct.h; sourceTree = "<group>"; };
+		3C8463791B9DD9900051AF3E /* AmProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmProduct.m; sourceTree = "<group>"; };
 		3C88581A1B973E2600B74AEC /* MineLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineLoginViewController.h; sourceTree = "<group>"; };
 		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
 		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -172,6 +175,44 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		3C8463771B9DD9330051AF3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		3C84637B1B9DD9A50051AF3E /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4DA621B9B24120059E82B /* SettingArrowItem.h */,
+				3CF4DA631B9B24120059E82B /* SettingArrowItem.m */,
+				3CF4DA651B9B24270059E82B /* SettingSwitchItem.h */,
+				3CF4DA661B9B24270059E82B /* SettingSwitchItem.m */,
+				3C9307E71B995E4300A56F58 /* SettingItem.h */,
+				3C9307E81B995E4300A56F58 /* SettingItem.m */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		3C84637C1B9DD9B80051AF3E /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				3C8463781B9DD9900051AF3E /* AmProduct.h */,
+				3C8463791B9DD9900051AF3E /* AmProduct.m */,
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		3C84637D1B9DDA080051AF3E /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				3CF4DA521B9AA1740059E82B /* GroupSetting.h */,
+				3CF4DA531B9AA1740059E82B /* GroupSetting.m */,
+			);
+			name = Group;
+			sourceTree = "<group>";
+		};
 		3C8858191B973DF600B74AEC /* Mine(我的彩票) */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +272,7 @@
 		3CEAE5BD1B91921600C0C3B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C8463771B9DD9330051AF3E /* Data */,
 				3CEAE5CC1B91921600C0C3B2 /* LaunchScreen.xib */,
 				3CEAE5C71B91921600C0C3B2 /* Main.storyboard */,
 				3CEAE5CA1B91921600C0C3B2 /* Images.xcassets */,
@@ -353,14 +395,9 @@
 		3CEAE5EE1B91D49700C0C3B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3C9307E71B995E4300A56F58 /* SettingItem.h */,
-				3C9307E81B995E4300A56F58 /* SettingItem.m */,
-				3CF4DA521B9AA1740059E82B /* GroupSetting.h */,
-				3CF4DA531B9AA1740059E82B /* GroupSetting.m */,
-				3CF4DA621B9B24120059E82B /* SettingArrowItem.h */,
-				3CF4DA631B9B24120059E82B /* SettingArrowItem.m */,
-				3CF4DA651B9B24270059E82B /* SettingSwitchItem.h */,
-				3CF4DA661B9B24270059E82B /* SettingSwitchItem.m */,
+				3C84637D1B9DDA080051AF3E /* Group */,
+				3C84637C1B9DD9B80051AF3E /* Product */,
+				3C84637B1B9DD9A50051AF3E /* Item */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -505,6 +542,7 @@
 				3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */,
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
 				3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */,
+				3C84637A1B9DD9900051AF3E /* AmProduct.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
 				3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */,
 				3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */,
