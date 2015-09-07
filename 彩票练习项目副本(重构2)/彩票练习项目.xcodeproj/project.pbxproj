@@ -13,6 +13,7 @@
 		3C7B63F01B9C819700A48333 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EC1B9C819700A48333 /* MBProgressHUD+MJ.m */; };
 		3C7B63F11B9C819700A48333 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */; };
 		3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */; };
+		3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8463751B9DC95B0051AF3E /* AmGridController.m */; };
 		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
 		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
 		3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E51B9953EE00A56F58 /* AmSettingController.m */; };
@@ -61,6 +62,8 @@
 		3C7B63ED1B9C819700A48333 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		3C7B63EE1B9C819700A48333 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3C8463741B9DC95B0051AF3E /* AmGridController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmGridController.h; sourceTree = "<group>"; };
+		3C8463751B9DC95B0051AF3E /* AmGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGridController.m; sourceTree = "<group>"; };
 		3C88581A1B973E2600B74AEC /* MineLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineLoginViewController.h; sourceTree = "<group>"; };
 		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
 		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -331,6 +334,8 @@
 		3CEAE5ED1B91D49000C0C3B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C8463741B9DC95B0051AF3E /* AmGridController.h */,
+				3C8463751B9DC95B0051AF3E /* AmGridController.m */,
 				3C9307E41B9953EE00A56F58 /* AmSettingController.h */,
 				3C9307E51B9953EE00A56F58 /* AmSettingController.m */,
 				3C9307EA1B99637200A56F58 /* AmPushNoticeController.h */,
@@ -514,6 +519,7 @@
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
+				3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@
 #import "Test2Controller.h"
 #import "CustomCell.h"
 #import "MBProgressHUD+MJ.h"
+#import "AmGridController.h"
 @interface AmSettingController ()
 
 @property(nonatomic,strong) NSMutableArray *data;
@@ -67,13 +68,11 @@
     };
     
     SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[Test1Controller class]];
+    SettingItem *share =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"分享" destvcClass:[Test1Controller class]];
+    SettingItem *look=[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"查看消息" destvcClass:[Test1Controller class]];
+    SettingItem *product =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"产品推荐" destvcClass:[AmGridController class]];
+    SettingItem *about =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"关于" destvcClass:[Test1Controller class]];
     
-    
-SettingItem *share =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"分享" destvcClass:[Test1Controller class]];
-SettingItem *look=[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"查看消息" destvcClass:[Test1Controller class]];
-SettingItem *product =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"产品推荐" destvcClass:[Test1Controller class]];
-SettingItem *about =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"关于" destvcClass:[Test1Controller class]];
-
     //        help.option =^{
     //            NSLog(@"帮助");
     //        };
@@ -92,7 +91,7 @@ SettingItem *about =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"关于" 
         
         //1组数据
         [self  setupOneGroup];
-    
+        
     }
     return  _data;
 }
