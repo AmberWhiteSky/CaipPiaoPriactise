@@ -16,6 +16,7 @@
 #define AmGridControllerCellID @"product"
 
 #import "AmGridController.h"
+#import "AmProduct.h"
 
 @interface AmGridController ()
 @property(nonatomic,strong) NSArray *products;
@@ -30,10 +31,22 @@ static NSString * const reuseIdentifier = @"Cell";
 //懒加载
 - (NSArray *)products {
     if (_products==nil) {
+        //json 文件路径
+        NSString *path =[[NSBundle  mainBundle] pathForResource:@"product.json" ofType:nil];
+        //加载json文件
+        NSData *data=   [NSData  dataWithContentsOfFile:path];
+        //将json 数据转化为nsarray 或者nsdictionary
+        
+        NSArray *dictArray =  [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        
+        //        NSLog(@"%@",[dictArray[0] class]);
+        
+        //将字典转为模型
         NSMutableArray *productArray =[NSMutableArray  array];
-        
-        
-        
+        for (NSDictionary*dict in  dictArray) {
+            AmProduct  *p =[AmProduct  productWithDict:dict];
+            [productArray  addObject:p ];
+        }
         _products =productArray;
         
     }
@@ -47,7 +60,6 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewFlowLayout *layout  =[[UICollectionViewFlowLayout  alloc] init];
     //设置item 大小  每个cell的尺寸
     layout.itemSize = CGSizeMake(100, 100);
-    
     return [super initWithCollectionViewLayout:layout];
 }
 
@@ -96,7 +108,7 @@ static NSString * const reuseIdentifier = @"Cell";
 //  总共多少选项
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete method implementation -- Return the number of items in the section
-    return 12;
+    return  self.products.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
