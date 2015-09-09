@@ -165,7 +165,11 @@
         if (arrowitem.destvcClass ==nil)
             //如果没有需要跳转的控制器 直接返回
             return;
+        
+        
         UIViewController *vc =[[arrowitem.destvcClass alloc] init];
+        //设置控制器标题
+        vc.title  =arrowitem.title;
         [self.navigationController pushViewController:vc animated:YES];
     }
     

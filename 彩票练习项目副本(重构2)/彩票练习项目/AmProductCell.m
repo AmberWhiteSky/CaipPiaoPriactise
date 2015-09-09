@@ -18,6 +18,15 @@
 
 @implementation AmProductCell
 
+
+- (void)awakeFromNib {
+    //collectionview的imageview的圆角
+    self.iconview.layer.cornerRadius=8;
+    //超出圆角进行裁剪
+    self.iconview.clipsToBounds =YES;
+
+}
+
 //重写set方法
 -(void)setProduct:(AmProduct *)product {
     _product=product;

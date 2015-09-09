@@ -59,8 +59,18 @@ static NSString * const reuseIdentifier = @"Cell";
 -(id)init {
     //1.流水布局
     UICollectionViewFlowLayout *layout  =[[UICollectionViewFlowLayout  alloc] init];
-    //设置item 大小  每个cell的尺寸
+    //2.设置item 大小  每个cell的尺寸
     layout.itemSize = CGSizeMake(100, 100);
+    //3.设置水间距
+    
+    layout.minimumInteritemSpacing =0;
+    //4.设置垂直间距
+    layout.minimumLineSpacing=10;
+    
+   //5.设置四周的哪边距
+//    layout.sectionInset =UIEdgeInsetsMake(100, 10, 50, 70);
+    layout.sectionInset = UIEdgeInsetsMake(layout.minimumLineSpacing, 0, 0, 0);
+    
     return [super initWithCollectionViewLayout:layout];
 }
 
@@ -131,6 +141,13 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
     return cell;
+}
+
+#pragma  mark  collectionView 代理方法 监听点击
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+   
+    AmProduct *p = self.products[indexPath.item];
+    NSLog(@"collectionView点击%@", p.title);
 }
 
 #pragma mark <UICollectionViewDelegate>

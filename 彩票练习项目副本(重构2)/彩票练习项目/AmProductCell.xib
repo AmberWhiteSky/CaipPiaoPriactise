@@ -18,19 +18,20 @@
                         <rect key="frame" x="8" y="0.0" width="84" height="63"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eha-IF-DYF">
-                        <rect key="frame" x="29" y="71" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="24" y="71" width="120" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="iconview" destination="NU9-zN-i9O" id="bzM-65-77v"/>
                 <outlet property="namelable" destination="Eha-IF-DYF" id="TIZ-qS-GdK"/>
             </connections>
-            <point key="canvasLocation" x="495" y="301"/>
+            <point key="canvasLocation" x="277" y="241"/>
         </collectionViewCell>
     </objects>
 </document>
