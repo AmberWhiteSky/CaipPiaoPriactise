@@ -17,6 +17,7 @@
 
 #import "AmGridController.h"
 #import "AmProduct.h"
+#import "AmProductCell.h"
 
 @interface AmGridController ()
 @property(nonatomic,strong) NSArray *products;
@@ -71,10 +72,16 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
     
-    // Register cell classes
+    // Register cell classes  代码
     //注册cell 告诉collectionView 将来创建怎么样的cell
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:AmGridControllerCellID];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:AmGridControllerCellID];
     
+    //xib 加载cell
+    UINib *nib =[UINib  nibWithNibName:@"AmProductCell" bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:AmGridControllerCellID];
+    
+    //设置collectionView的背景色
+    self.collectionView.backgroundColor =[UIColor  whiteColor];
     // Do any additional setup after loading the view.
 }
 
@@ -114,12 +121,14 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    //获得cell
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:AmGridControllerCellID forIndexPath:indexPath];
+    //1.获得cell
+    AmProductCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:AmGridControllerCellID forIndexPath:indexPath];
     
     // Configure the cell
     
-    cell.backgroundColor = [UIColor  orangeColor];
+    //2.传递模型
+    cell.product =self.products[indexPath.item];
+    
     
     return cell;
 }

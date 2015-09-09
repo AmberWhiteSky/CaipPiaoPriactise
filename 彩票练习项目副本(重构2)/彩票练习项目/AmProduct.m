@@ -11,7 +11,10 @@
 @implementation AmProduct
 -(instancetype)  initWithDict:(NSDictionary *) dict{
     if (self=[super  init]) {
-        [self  setValuesForKeysWithDictionary:dict];
+        
+        self.icon =dict[@"icon"];
+        self.title = dict [@"title"];
+//        [self  setValuesForKeysWithDictionary:dict];
         
     }
     return self;

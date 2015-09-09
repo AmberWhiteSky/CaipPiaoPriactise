@@ -26,6 +26,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <connections>
+                <outlet property="iconview" destination="NU9-zN-i9O" id="bzM-65-77v"/>
+                <outlet property="namelable" destination="Eha-IF-DYF" id="TIZ-qS-GdK"/>
+            </connections>
             <point key="canvasLocation" x="495" y="301"/>
         </collectionViewCell>
     </objects>
