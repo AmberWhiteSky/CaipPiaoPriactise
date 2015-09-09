@@ -40,6 +40,9 @@
 		3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA601B9AAFD80059E82B /* CustomCell.m */; };
 		3CF4DA641B9B24120059E82B /* SettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA631B9B24120059E82B /* SettingArrowItem.m */; };
 		3CF4DA671B9B24270059E82B /* SettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA661B9B24270059E82B /* SettingSwitchItem.m */; };
+		3CFB84E11BA07195000FA149 /* AmPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB84E01BA07195000FA149 /* AmPushController.m */; };
+		3CFB84E41BA075CD000FA149 /* AmBaseSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB84E31BA075CD000FA149 /* AmBaseSettingController.m */; };
+		3CFB84EB1BA0815C000FA149 /* AmAwArdController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFB84EA1BA0815C000FA149 /* AmAwArdController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,12 @@
 		3CF4DA631B9B24120059E82B /* SettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingArrowItem.m; sourceTree = "<group>"; };
 		3CF4DA651B9B24270059E82B /* SettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchItem.h; sourceTree = "<group>"; };
 		3CF4DA661B9B24270059E82B /* SettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchItem.m; sourceTree = "<group>"; };
+		3CFB84DF1BA07195000FA149 /* AmPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmPushController.h; sourceTree = "<group>"; };
+		3CFB84E01BA07195000FA149 /* AmPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmPushController.m; sourceTree = "<group>"; };
+		3CFB84E21BA075CD000FA149 /* AmBaseSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmBaseSettingController.h; sourceTree = "<group>"; };
+		3CFB84E31BA075CD000FA149 /* AmBaseSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmBaseSettingController.m; sourceTree = "<group>"; };
+		3CFB84E91BA0815C000FA149 /* AmAwArdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmAwArdController.h; sourceTree = "<group>"; };
+		3CFB84EA1BA0815C000FA149 /* AmAwArdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmAwArdController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +403,8 @@
 		3CEAE5ED1B91D49000C0C3B2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3CFB84E51BA075D5000FA149 /* BaseController */,
+				3CFB84DE1BA07154000FA149 /* Push */,
 				3C8463741B9DC95B0051AF3E /* AmGridController.h */,
 				3C8463751B9DC95B0051AF3E /* AmGridController.m */,
 				3C9307E41B9953EE00A56F58 /* AmSettingController.h */,
@@ -449,6 +460,26 @@
 			children = (
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		3CFB84DE1BA07154000FA149 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB84DF1BA07195000FA149 /* AmPushController.h */,
+				3CFB84E01BA07195000FA149 /* AmPushController.m */,
+				3CFB84E91BA0815C000FA149 /* AmAwArdController.h */,
+				3CFB84EA1BA0815C000FA149 /* AmAwArdController.m */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		3CFB84E51BA075D5000FA149 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				3CFB84E21BA075CD000FA149 /* AmBaseSettingController.h */,
+				3CFB84E31BA075CD000FA149 /* AmBaseSettingController.m */,
+			);
+			name = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,6 +599,7 @@
 				3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */,
 				3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */,
 				3CF4DA641B9B24120059E82B /* SettingArrowItem.m in Sources */,
+				3CFB84EB1BA0815C000FA149 /* AmAwArdController.m in Sources */,
 				3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
 				3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */,
@@ -580,6 +612,8 @@
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
 				3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */,
+				3CFB84E11BA07195000FA149 /* AmPushController.m in Sources */,
+				3CFB84E41BA075CD000FA149 /* AmBaseSettingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -72,8 +72,12 @@
 
 //设置数据
 -(void)  setupData{
-    self.imageView.image =[UIImage imageNamed:self.item.icon];
-    self.textLabel.text=self.item.title;
+    if (self.item.icon) {
+        self.imageView.image =[UIImage imageNamed:self.item.icon];
+        self.textLabel.text=self.item.title;
+
+    }
+    self.textLabel.text =self.item.title;
     
 }
 

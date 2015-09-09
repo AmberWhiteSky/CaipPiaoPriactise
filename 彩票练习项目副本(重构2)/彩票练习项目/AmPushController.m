@@ -10,30 +10,31 @@
 #import "SettingArrowItem.h"
 #import "SettingSwitchItem.h"
 #import "GroupSetting.h"
-#import "MBProgressHUD+MJ.h"
-#import "AmPushController.h"
 #import "Test1Controller.h"
 #import "Test2Controller.h"
+#import "MBProgressHUD+MJ.h"
 #import "AmGridController.h"
-#import "AmBaseSettingController.h"
-@interface AmSettingController ()
+#import "AmPushController.h"
+#import "AmAwArdController.h"
+@interface AmPushController ()
 
 
 @end
 
-@implementation AmSettingController
-
-
+@implementation AmPushController
 
 
 //第零组的数据
 -(void) setupZeroGroup{
-    SettingItem *pushNotice =[SettingArrowItem  itemWithIcon:@"MorePush" title:@"推送和提醒" destvcClass:[AmPushController class]];
-    SettingItem *handShake =[SettingSwitchItem  itemWithIcon:@"handShake" title:@"摇一摇机选" ];
-    SettingItem *sound_Effect =[SettingSwitchItem  itemWithIcon:@"sound_Effect" title:@"声音效果"];
+    SettingItem *pushNotice =[SettingArrowItem  itemWithIcon:nil title:@"开奖号码推送" destvcClass:[AmAwArdController class]];
+      SettingItem *pushNotice1 =[SettingArrowItem  itemWithIcon:nil title:@"中奖动画" destvcClass:[Test2Controller class]];
+      SettingItem *pushNotice2 =[SettingArrowItem  itemWithIcon:nil title:@"比分直播提醒" destvcClass:[Test1Controller class]];
+      SettingItem *pushNotice3 =[SettingArrowItem  itemWithIcon:nil title:@"购彩定时提醒" destvcClass:[Test2Controller class]];
+//    SettingItem *handShake =[SettingSwitchItem  itemWithIcon:@"handShake" title:@"摇一摇机选" ];
+//    SettingItem *sound_Effect =[SettingSwitchItem  itemWithIcon:@"sound_Effect" title:@"声音效果"];
     
     GroupSetting *group = [[GroupSetting  alloc] init];
-    group.items =@[pushNotice,handShake,sound_Effect];
+    group.items =@[pushNotice,pushNotice1,pushNotice2,pushNotice3];
     [self.data  addObject:group];
     
 };
@@ -73,15 +74,11 @@
 }
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //1.标题
-    self.title=@"设置";
-    //2.添加数据
-    [self setupZeroGroup];
-    [self setupOneGroup];
-    
+    [self  setupZeroGroup];
 }
 
 
