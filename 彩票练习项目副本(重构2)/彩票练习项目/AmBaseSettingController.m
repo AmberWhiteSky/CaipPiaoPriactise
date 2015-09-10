@@ -40,10 +40,7 @@
     [super viewDidLoad];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark - Table view data source
 
@@ -63,9 +60,7 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    // Configure the cell...
-    //1.创建cell
+        //1.创建cell
     CustomCell *cell =[CustomCell  cellWithTableView:tableView];
     
     //2.给cell传递模型数据
@@ -74,12 +69,8 @@
     cell.item =group.items[indexPath.row];
     //3返回cell
     return cell;
-    
-    
-    
-    
-    
 }
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //取消选中这行
     [tableView  deselectRowAtIndexPath:indexPath animated:YES];
