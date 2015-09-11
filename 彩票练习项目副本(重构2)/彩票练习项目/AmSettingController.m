@@ -33,6 +33,7 @@
     SettingItem *sound_Effect =[SettingSwitchItem  itemWithIcon:@"sound_Effect" title:@"声音效果"];
     
     GroupSetting *group = [[GroupSetting  alloc] init];
+    //把内容添加到组模型中
     group.items =@[pushNotice,handShake,sound_Effect];
     [self.data  addObject:group];
     
@@ -68,6 +69,7 @@
     //            NSLog(@"帮助");
     //        };
     GroupSetting *group = [[GroupSetting  alloc] init];
+    //把内容添加到组模型中
     group.items =@[MoreUpdate,help,share,look,product,about];
     [self.data  addObject:group];
 }
