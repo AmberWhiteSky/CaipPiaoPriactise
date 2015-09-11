@@ -15,6 +15,9 @@
 		3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B63EF1B9C819700A48333 /* MBProgressHUD.m */; };
 		3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8463751B9DC95B0051AF3E /* AmGridController.m */; };
 		3C84637A1B9DD9900051AF3E /* AmProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8463791B9DD9900051AF3E /* AmProduct.m */; };
+		3C85907E1BA32D7800F55572 /* BuyMoneyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C85907D1BA32D7800F55572 /* BuyMoneyController.m */; };
+		3C8590811BA32E6900F55572 /* ScorePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8590801BA32E6900F55572 /* ScorePlayerController.m */; };
+		3C8590841BA330AD00F55572 /* AnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8590831BA330AD00F55572 /* AnimationController.m */; };
 		3C88581C1B973E2600B74AEC /* MineLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C88581B1B973E2600B74AEC /* MineLoginViewController.m */; };
 		3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8858201B9743B000B74AEC /* UIImage+Extension.m */; };
 		3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9307E51B9953EE00A56F58 /* AmSettingController.m */; };
@@ -73,6 +76,12 @@
 		3C8463751B9DC95B0051AF3E /* AmGridController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmGridController.m; sourceTree = "<group>"; };
 		3C8463781B9DD9900051AF3E /* AmProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmProduct.h; sourceTree = "<group>"; };
 		3C8463791B9DD9900051AF3E /* AmProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmProduct.m; sourceTree = "<group>"; };
+		3C85907C1BA32D7800F55572 /* BuyMoneyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyMoneyController.h; sourceTree = "<group>"; };
+		3C85907D1BA32D7800F55572 /* BuyMoneyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyMoneyController.m; sourceTree = "<group>"; };
+		3C85907F1BA32E6900F55572 /* ScorePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScorePlayerController.h; sourceTree = "<group>"; };
+		3C8590801BA32E6900F55572 /* ScorePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScorePlayerController.m; sourceTree = "<group>"; };
+		3C8590821BA330AD00F55572 /* AnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationController.h; sourceTree = "<group>"; };
+		3C8590831BA330AD00F55572 /* AnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationController.m; sourceTree = "<group>"; };
 		3C88581A1B973E2600B74AEC /* MineLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineLoginViewController.h; sourceTree = "<group>"; };
 		3C88581B1B973E2600B74AEC /* MineLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineLoginViewController.m; sourceTree = "<group>"; };
 		3C88581F1B9743B000B74AEC /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
@@ -469,6 +478,12 @@
 				3CFB84E01BA07195000FA149 /* AmPushController.m */,
 				3CFB84E91BA0815C000FA149 /* AmAwArdController.h */,
 				3CFB84EA1BA0815C000FA149 /* AmAwArdController.m */,
+				3C85907C1BA32D7800F55572 /* BuyMoneyController.h */,
+				3C85907D1BA32D7800F55572 /* BuyMoneyController.m */,
+				3C85907F1BA32E6900F55572 /* ScorePlayerController.h */,
+				3C8590801BA32E6900F55572 /* ScorePlayerController.m */,
+				3C8590821BA330AD00F55572 /* AnimationController.h */,
+				3C8590831BA330AD00F55572 /* AnimationController.m */,
 			);
 			name = Push;
 			sourceTree = "<group>";
@@ -595,6 +610,7 @@
 				3CEAE5C31B91921600C0C3B2 /* AppDelegate.m in Sources */,
 				3C9307E61B9953EE00A56F58 /* AmSettingController.m in Sources */,
 				3C84637A1B9DD9900051AF3E /* AmProduct.m in Sources */,
+				3C85907E1BA32D7800F55572 /* BuyMoneyController.m in Sources */,
 				3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */,
 				3C9307E91B995E4300A56F58 /* SettingItem.m in Sources */,
 				3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */,
@@ -602,6 +618,7 @@
 				3CFB84EB1BA0815C000FA149 /* AmAwArdController.m in Sources */,
 				3C9307EC1B99637200A56F58 /* AmPushNoticeController.m in Sources */,
 				3CEAE5C01B91921600C0C3B2 /* main.m in Sources */,
+				3C8590841BA330AD00F55572 /* AnimationController.m in Sources */,
 				3C7B63F21B9C819700A48333 /* MBProgressHUD.m in Sources */,
 				3C8858211B9743B000B74AEC /* UIImage+Extension.m in Sources */,
 				3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */,
@@ -614,6 +631,7 @@
 				3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */,
 				3CFB84E11BA07195000FA149 /* AmPushController.m in Sources */,
 				3CFB84E41BA075CD000FA149 /* AmBaseSettingController.m in Sources */,
+				3C8590811BA32E6900F55572 /* ScorePlayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

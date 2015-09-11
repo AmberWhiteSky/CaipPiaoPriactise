@@ -16,6 +16,9 @@
 #import "AmGridController.h"
 #import "AmPushController.h"
 #import "AmAwArdController.h"
+#import "AnimationController.h"
+#import "BuyMoneyController.h"
+#import "ScorePlayerController.h"
 @interface AmPushController ()
 
 
@@ -27,9 +30,9 @@
 //第零组的数据
 -(void) setupZeroGroup{
     SettingItem *pushNotice =[SettingArrowItem  itemWithIcon:nil title:@"开奖号码推送" destvcClass:[AmAwArdController class]];
-      SettingItem *pushNotice1 =[SettingArrowItem  itemWithIcon:nil title:@"中奖动画" destvcClass:[Test2Controller class]];
-      SettingItem *pushNotice2 =[SettingArrowItem  itemWithIcon:nil title:@"比分直播提醒" destvcClass:[Test1Controller class]];
-      SettingItem *pushNotice3 =[SettingArrowItem  itemWithIcon:nil title:@"购彩定时提醒" destvcClass:[Test2Controller class]];
+      SettingItem *pushNotice1 =[SettingArrowItem  itemWithIcon:nil title:@"中奖动画" destvcClass:[AnimationController class]];
+      SettingItem *pushNotice2 =[SettingArrowItem  itemWithIcon:nil title:@"比分直播提醒" destvcClass:[ScorePlayerController class]];
+      SettingItem *pushNotice3 =[SettingArrowItem  itemWithIcon:nil title:@"购彩定时提醒" destvcClass:[BuyMoneyController class]];
     
     GroupSetting *group = [[GroupSetting  alloc] init];
     group.items =@[pushNotice,pushNotice1,pushNotice2,pushNotice3];
