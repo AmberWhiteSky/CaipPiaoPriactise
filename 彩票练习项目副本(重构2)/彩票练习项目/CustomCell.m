@@ -10,6 +10,7 @@
 #import "SettingItem.h"
 #import "SettingSwitchItem.h"
 #import "SettingArrowItem.h"
+#import "LableItem.h"
 
 @interface CustomCell ()
 /** 箭头 **/

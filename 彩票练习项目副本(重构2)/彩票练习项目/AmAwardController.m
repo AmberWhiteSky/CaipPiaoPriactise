@@ -19,14 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SettingItem *pushNotice =[SettingSwitchItem  itemWithIcon:nil title:@"开奖号码推送" ];
-    SettingItem *pushNotice1 =[SettingSwitchItem  itemWithIcon:nil title:@"中奖动画" ];
+    SettingItem *pushNotice =[SettingSwitchItem  itemWithIcon:nil title:@"双色球" ];
+    SettingItem *pushNotice1 =[SettingSwitchItem  itemWithIcon:nil title:@"大乐透" ];
    
   
     GroupSetting *group = [[GroupSetting  alloc] init];
     group.items =@[pushNotice,pushNotice1];
+    
     group.header =@"daletou";
-    group.items = @"dadasdasda";
     [self.data  addObject:group];
 
 }

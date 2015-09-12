@@ -35,6 +35,7 @@
 		3CEAE5F51B91D58200C0C3B2 /* AmTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE5F41B91D58200C0C3B2 /* AmTabBar.m */; };
 		3CEAE6041B91D8D500C0C3B2 /* AmTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */; };
 		3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */; };
+		3CF406E81BA46FE100874983 /* LableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF406E71BA46FE100874983 /* LableItem.m */; };
 		3CF4DA541B9AA1740059E82B /* GroupSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA531B9AA1740059E82B /* GroupSetting.m */; };
 		3CF4DA581B9AA4700059E82B /* Test1Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF4DA561B9AA4700059E82B /* Test1Controller.m */; };
 		3CF4DA591B9AA4700059E82B /* Test1Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF4DA571B9AA4700059E82B /* Test1Controller.xib */; };
@@ -113,6 +114,8 @@
 		3CEAE6031B91D8D500C0C3B2 /* AmTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarController.m; sourceTree = "<group>"; };
 		3CEAE6081B91EB1F00C0C3B2 /* AmTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTabBarButton.h; sourceTree = "<group>"; };
 		3CEAE6091B91EB1F00C0C3B2 /* AmTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmTabBarButton.m; sourceTree = "<group>"; };
+		3CF406E61BA46FE100874983 /* LableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LableItem.h; sourceTree = "<group>"; };
+		3CF406E71BA46FE100874983 /* LableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LableItem.m; sourceTree = "<group>"; };
 		3CF4DA521B9AA1740059E82B /* GroupSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSetting.h; sourceTree = "<group>"; };
 		3CF4DA531B9AA1740059E82B /* GroupSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSetting.m; sourceTree = "<group>"; };
 		3CF4DA551B9AA4700059E82B /* Test1Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1Controller.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 				3CF4DA661B9B24270059E82B /* SettingSwitchItem.m */,
 				3C9307E71B995E4300A56F58 /* SettingItem.h */,
 				3C9307E81B995E4300A56F58 /* SettingItem.m */,
+				3CF406E61BA46FE100874983 /* LableItem.h */,
+				3CF406E71BA46FE100874983 /* LableItem.m */,
 			);
 			name = Item;
 			sourceTree = "<group>";
@@ -628,6 +633,7 @@
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
+				3CF406E81BA46FE100874983 /* LableItem.m in Sources */,
 				3C8463761B9DC95B0051AF3E /* AmGridController.m in Sources */,
 				3CFB84E11BA07195000FA149 /* AmPushController.m in Sources */,
 				3CFB84E41BA075CD000FA149 /* AmBaseSettingController.m in Sources */,
