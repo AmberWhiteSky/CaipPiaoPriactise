@@ -17,6 +17,8 @@
 @property(nonatomic,strong) UIImageView *arrowView;
 /** 开关**/
 @property(nonatomic,strong) UISwitch  *switchView ;
+/** 标签**/
+@property(nonatomic,strong) UILabel  *rightlable ;
 
 @end
 
@@ -38,6 +40,16 @@
     return _switchView;
 }
 
+//标签懒加载
+-(UILabel *)rightlable {
+    if (_rightlable==nil) {
+        _rightlable = [[UILabel  alloc] init];
+        _rightlable.bounds =CGRectMake(0, 0, 100, 30);
+    }
+    
+    return _rightlable;
+
+}
 //创建cell
 +(instancetype)  cellWithTableView:(UITableView *) tableview{
     static NSString *ID =@"setting";
@@ -49,15 +61,15 @@
 }
 
 
-
--(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        //
-    }
-    return self;
-    
-}
+//
+//-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+//    self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
+//    if (self) {
+//        //
+//    }
+//    return self;
+//    
+//}
 
 //设置模型  传递模型 赋值
 -(void)setItem:(SettingItem *)item {
@@ -93,7 +105,15 @@
         //当是开关的时候判断  点击没有样式
         self.selectionStyle = UITableViewCellSelectionStyleNone;
 
-    }else {
+    }
+    else  if([self.item  isKindOfClass:[LableItem class]]){
+        //标签
+        self.accessoryView =self.rightlable;
+        //当是开关的时候判断  点击没有样式
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+    }
+    else {
         //什么也没有显示
         self.accessoryView =nil;
     }
