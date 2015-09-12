@@ -45,6 +45,8 @@
     if (_rightlable==nil) {
         _rightlable = [[UILabel  alloc] init];
         _rightlable.bounds =CGRectMake(0, 0, 100, 30);
+        _rightlable.backgroundColor =[UIColor  redColor];
+        
     }
     
     return _rightlable;
@@ -110,7 +112,7 @@
         //标签
         self.accessoryView =self.rightlable;
         //当是开关的时候判断  点击没有样式
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
+//        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
     else {
