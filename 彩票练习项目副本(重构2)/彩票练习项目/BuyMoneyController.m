@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    SettingItem *butmoney =[SettingSwitchItem  itemWithIcon:nil title:@"购彩定时提醒" ];
+    SettingItem *butmoney =[SettingSwitchItem  itemWithTitle:@"购彩定时提醒" ];
     
     
     

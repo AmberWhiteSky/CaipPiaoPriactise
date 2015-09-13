@@ -34,5 +34,5 @@ typedef  void (^SettingItemOption)();
 //不用跳转的方法
 +(instancetype) itemWithIcon:(NSString *) icon  title:(NSString *)title ;
 
-
++(instancetype) itemWithTitle:(NSString *) title ;
 @end

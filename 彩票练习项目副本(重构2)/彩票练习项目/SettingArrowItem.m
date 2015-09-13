@@ -19,4 +19,8 @@
     
 }
 
++(instancetype) itemWithtitle:(NSString *)title  destvcClass:(Class) destvcClass{
+
+    return  [self itemWithIcon: nil title:title destvcClass:destvcClass];
+}
 @end

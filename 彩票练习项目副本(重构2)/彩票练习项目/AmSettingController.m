@@ -16,6 +16,7 @@
 #import "Test2Controller.h"
 #import "AmGridController.h"
 #import "AmBaseSettingController.h"
+#import "HelpViewController.h"
 @interface AmSettingController ()
 
 
@@ -59,7 +60,7 @@
         });
     };
     
-    SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[Test1Controller class]];
+    SettingItem *help =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"帮助" destvcClass:[HelpViewController class]];
     SettingItem *share =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"分享" destvcClass:[Test1Controller class]];
     SettingItem *look=[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"查看消息" destvcClass:[Test1Controller class]];
     SettingItem *product =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"产品推荐" destvcClass:[AmGridController class]];

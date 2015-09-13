@@ -27,21 +27,21 @@
 //第零组的数据
 -(void) setupZeroGroup{
     //0组
-    SettingItem *noticePlayer =[SettingSwitchItem  itemWithIcon:nil title:@"提醒我关注的比赛" ];
+    SettingItem *noticePlayer =[SettingSwitchItem  itemWithTitle:@"提醒我关注的比赛" ];
     GroupSetting *group = [[GroupSetting  alloc] init];
     group.items =@[noticePlayer];
     [self.data  addObject:group];
  
     
     //1组
-    SettingItem *noticePlayer1 =[LableItem  itemWithIcon:nil title:@"起始时间" ];
+    SettingItem *noticePlayer1 =[LableItem  itemWithTitle:@"起始时间" ];
     GroupSetting *group1 = [[GroupSetting  alloc] init];
     group1.items =@[noticePlayer1];
     group1.header=@"2015-9-13-00:08";
     [self.data  addObject:group1];
     
     //2组
-    SettingItem *noticePlayer2 =[LableItem  itemWithIcon:nil title:@"结束时间" ];
+    SettingItem *noticePlayer2 =[LableItem  itemWithTitle:@"结束时间" ];
     GroupSetting *group2 = [[GroupSetting  alloc] init];
     group2.items =@[noticePlayer2];
     [self.data  addObject:group2];

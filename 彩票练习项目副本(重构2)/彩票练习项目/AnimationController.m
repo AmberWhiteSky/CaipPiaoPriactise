@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    SettingItem *pushNotice =[SettingSwitchItem  itemWithIcon:nil title:@"中奖动画" ];
+    SettingItem *pushNotice =[SettingSwitchItem  itemWithTitle:@"中奖动画" ];
     
     
     
