@@ -12,6 +12,7 @@
 #import "HtmlViewController.h"
 #import "AmNavigationController.h"
 #import "AmHelpHtml.h"
+#import "SettingItem.h"
 
 @interface HelpViewController ()
 @property(nonatomic,strong) NSArray  *htmlArray;
@@ -19,7 +20,7 @@
 @end
 
 @implementation HelpViewController
-
+#warning 注意product.json 改为json
 //懒加载
 - (NSArray *)htmlArray {
     if (_htmlArray==nil) {
@@ -51,16 +52,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    SettingItem *pushNotice =[SettingArrowItem  itemWithtitle:@"如何领奖?" destvcClass :nil];
+    //    SettingItem *pushNotice =[SettingArrowItem  itemWithtitle:@"如何领奖?" destvcClass :nil];
+    
+    NSMutableArray *items = [NSMutableArray  array];
+    for(AmHelpHtml *html in self.htmlArray){
+        SettingItem *item = [SettingArrowItem  itemWithtitle:html.title destvcClass:nil];
+        [items addObject:item];
+    }
+    
+    
+    
+    
     
     GroupSetting *group = [[GroupSetting  alloc] init];
-    group.items =@[pushNotice];
+    group.items =items;
     [self.data  addObject:group];
-
+    
 }
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    HtmlViewController *htmlVc =[[HtmlViewController  alloc] init];
+    htmlVc.html = self.htmlArray[indexPath.row];
+    
     
     HtmlViewController *html =[[HtmlViewController  alloc] init];
     AmNavigationController *nav  =[[AmNavigationController alloc] initWithRootViewController:html];

@@ -14,6 +14,8 @@
 //网页文件名
 @property(nonatomic,copy) NSString *html;
 
+@property(nonatomic,copy)  NSString *ID ;
+
 
 //字典转模型
 -(instancetype)  initWithDict:(NSDictionary *) dict;

@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SettingItem *pushNotice =[SettingSwitchItem  itemWithIcon:nil title:@"双色球" ];
-    SettingItem *pushNotice1 =[SettingSwitchItem  itemWithIcon:nil title:@"大乐透" ];
+    SettingItem *pushNotice =[SettingSwitchItem  itemWithTitle:@"双色球" ];
+    SettingItem *pushNotice1 =[SettingSwitchItem  itemWithTitle:@"大乐透" ];
    
   
     GroupSetting *group = [[GroupSetting  alloc] init];

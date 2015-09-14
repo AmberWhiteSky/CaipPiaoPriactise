@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class  AmHelpHtml;
 @interface HtmlViewController : UIViewController
-
+@property(nonatomic ,strong)AmHelpHtml *html;
 @end

@@ -7,8 +7,9 @@
 //
 
 #import "HtmlViewController.h"
+#import "AmHelpHtml.h"
 
-@interface HtmlViewController ()
+@interface HtmlViewController ()<UIWebViewDelegate>
 
 @end
 
@@ -22,10 +23,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //标题
+    self.title =self.html.title;
+    
+    
+    
     UIWebView *webview =(UIWebView *) self.view;
+    webview.delegate=self;
     
     //创建url
-    NSURL *url =[[NSBundle mainBundle] URLForResource:@"bjdc_howto.html" withExtension:nil];
+    NSURL *url =[[NSBundle mainBundle] URLForResource:self.html.html  withExtension:nil];
     
     //创建请求
     NSURLRequest *request =[NSURLRequest requestWithURL:url];
@@ -41,5 +48,14 @@
 
 -(void)  close {
     [self  dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+//网页加载成功时候调用方法
+-(void)webViewDidFinishLoad:(UIWebView *)webView {
+   //跳到id 对应的网页标签
+    NSString *js =[NSString  stringWithFormat:@"window.location.href ='#%@';",self.html.ID];
+    //执行javascript 代码
+    [webView stringByEvaluatingJavaScriptFromString:js];
 }
 @end

@@ -16,6 +16,7 @@
         
         self.html =dict[@"html"];
         self.title = dict [@"title"];
+        self.ID =dict [@"id"];
         //        [self  setValuesForKeysWithDictionary:dict];
         
     }
