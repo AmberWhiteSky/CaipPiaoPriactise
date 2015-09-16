@@ -20,6 +20,7 @@
 #import "BuyMoneyController.h"
 #import "ScorePlayerController.h"
 #import "ShareViewController.h"
+#import "CaiPiaoViewController.h"
 @interface AmPushController ()
 
 

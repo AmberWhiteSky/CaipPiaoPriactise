@@ -18,6 +18,7 @@
 #import "AmBaseSettingController.h"
 #import "HelpViewController.h"
 #import "ShareViewController.h"
+#import "CaiPiaoViewController.h"
 @interface AmSettingController ()
 
 
@@ -65,7 +66,7 @@
     SettingItem *share =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"分享" destvcClass:[ShareViewController class]];
     SettingItem *look=[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"查看消息" destvcClass:[Test1Controller class]];
     SettingItem *product =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"产品推荐" destvcClass:[AmGridController class]];
-    SettingItem *about =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"关于" destvcClass:[Test1Controller class]];
+    SettingItem *about =[SettingArrowItem  itemWithIcon:@"MoreHelp" title:@"关于" destvcClass:[CaiPiaoViewController class]];
     
     //        help.option =^{
     //            NSLog(@"帮助");

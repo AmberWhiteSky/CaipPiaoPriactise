@@ -26,6 +26,9 @@ typedef  void (^SettingItemOption)();
 //标题
 @property(nonatomic,copy)  NSString *title;
 
+//子标题
+@property(nonatomic,copy) NSString*subtitle;
+
 //点击那个cell 需要做什么事情
 @property(nonatomic,copy) SettingItemOption  option;
 

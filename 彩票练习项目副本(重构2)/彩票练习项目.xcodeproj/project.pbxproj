@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C078CF91B93398200C8BBC2 /* AmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C078CF81B93398200C8BBC2 /* AmNavigationController.m */; };
+		3C1BFAE11BA9B0A700AAA911 /* CaiPiaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C1BFAE01BA9B0A700AAA911 /* CaiPiaoViewController.m */; };
 		3C2E27FA1BA86120006363CA /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2E27F91BA86120006363CA /* ShareViewController.m */; };
 		3C3732801B9489F700710BD8 /* AmTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C37327F1B9489F700710BD8 /* AmTitleButton.m */; };
 		3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3732831B94949B00710BD8 /* AllBugViewController.m */; };
@@ -97,6 +98,8 @@
 		3C078CF61B9331ED00C8BBC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
 		3C078CF71B93398200C8BBC2 /* AmNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmNavigationController.h; sourceTree = "<group>"; };
 		3C078CF81B93398200C8BBC2 /* AmNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmNavigationController.m; sourceTree = "<group>"; };
+		3C1BFADF1BA9B0A700AAA911 /* CaiPiaoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaiPiaoViewController.h; sourceTree = "<group>"; };
+		3C1BFAE01BA9B0A700AAA911 /* CaiPiaoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaiPiaoViewController.m; sourceTree = "<group>"; };
 		3C2E27F81BA86120006363CA /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		3C2E27F91BA86120006363CA /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		3C37327E1B9489F700710BD8 /* AmTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmTitleButton.h; sourceTree = "<group>"; };
@@ -579,6 +582,8 @@
 				3CF4DA5C1B9AA4B50059E82B /* Test2Controller.xib */,
 				3C2E27F81BA86120006363CA /* ShareViewController.h */,
 				3C2E27F91BA86120006363CA /* ShareViewController.m */,
+				3C1BFADF1BA9B0A700AAA911 /* CaiPiaoViewController.h */,
+				3C1BFAE01BA9B0A700AAA911 /* CaiPiaoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -810,6 +815,7 @@
 				3C7B63F01B9C819700A48333 /* MBProgressHUD+MJ.m in Sources */,
 				3CA81AE01BA5B331002B5DC3 /* HelpViewController.m in Sources */,
 				3CEAE60A1B91EB1F00C0C3B2 /* AmTabBarButton.m in Sources */,
+				3C1BFAE11BA9B0A700AAA911 /* CaiPiaoViewController.m in Sources */,
 				3C3732841B94949B00710BD8 /* AllBugViewController.m in Sources */,
 				3CF4DA611B9AAFD80059E82B /* CustomCell.m in Sources */,
 				3CF406E81BA46FE100874983 /* LableItem.m in Sources */,

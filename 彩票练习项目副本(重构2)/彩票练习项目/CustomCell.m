@@ -57,7 +57,8 @@
     static NSString *ID =@"setting";
     CustomCell *cell = [tableview  dequeueReusableCellWithIdentifier:ID];
     if (cell==nil) {
-        cell = [[CustomCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        //改变cell的样式  会影响cell的子标题显示的位置
+        cell = [[CustomCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     return cell;
 }
@@ -83,6 +84,12 @@
     
     //2.设置右边数据
     [self  setupRightContent];
+    
+    self.textLabel.text =self.item.title;
+    //设置子标题
+    self.detailTextLabel.text =self.item.subtitle;
+
+    
 }
 
 //设置数据
@@ -92,7 +99,6 @@
         self.textLabel.text=self.item.title;
 
     }
-    self.textLabel.text =self.item.title;
     
 }
 
