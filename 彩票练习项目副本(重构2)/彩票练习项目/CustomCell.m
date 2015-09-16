@@ -36,10 +36,26 @@
 -(UISwitch *)switchView {
     if (_switchView==nil) {
         _switchView =[[UISwitch  alloc] init];
+        //添加switch事件
+        [_switchView  addTarget:self action:@selector(switchStateChange) forControlEvents:UIControlEventValueChanged];
     }
     return _switchView;
 }
 
+//监听UISwitch 状态改变的方法
+-(void) switchStateChange{
+    NSLog(@"witchView ---%d",self.switchView.isOn);
+    
+    //保存选择的状态
+    NSUserDefaults * defaults = [NSUserDefaults  standardUserDefaults];
+    //先判断 在保存
+    if (self.item.switchkey) {
+        [defaults  setBool:self.switchView.isOn forKey:self.item.switchkey];
+        [defaults synchronize];
+
+    }
+    
+}
 //标签懒加载
 -(UILabel *)rightlable {
     if (_rightlable==nil) {
@@ -112,6 +128,15 @@
         self.accessoryView =self.switchView;
         //当是开关的时候判断  点击没有样式
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        //（读取之前保存的开发状态）设置开关状态
+        NSUserDefaults *defaults = [NSUserDefaults  standardUserDefaults];
+        
+        //先判断有没有值，再读取
+        if (self.item.switchkey) {
+            self.switchView.on = [defaults  boolForKey:self.item.switchkey];
+
+        }
 
     }
     else  if([self.item  isKindOfClass:[LableItem class]]){

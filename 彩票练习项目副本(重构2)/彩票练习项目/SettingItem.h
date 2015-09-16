@@ -29,6 +29,10 @@ typedef  void (^SettingItemOption)();
 //子标题
 @property(nonatomic,copy) NSString*subtitle;
 
+//存储数据的key
+
+@property(nonatomic,copy)  NSString *switchkey;
+
 //点击那个cell 需要做什么事情
 @property(nonatomic,copy) SettingItemOption  option;
 
