@@ -19,14 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    SettingItem *pushNotice =[SettingSwitchItem  itemWithTitle:@"双色球" ];
-    SettingItem *pushNotice1 =[SettingSwitchItem  itemWithTitle:@"大乐透" ];
+    SettingItem *ball =[SettingSwitchItem  itemWithTitle:@"双色球" ];
+    ball.switchkey  =@"AmAwArdController-ball";
+    SettingItem *letou =[SettingSwitchItem  itemWithTitle:@"大乐透" ];
    
   
     GroupSetting *group = [[GroupSetting  alloc] init];
-    group.items =@[pushNotice,pushNotice1];
+    group.items =@[ball,letou];
     
-    group.header =@"daletou";
+    group.header =@"打开设置即可在开奖后立即受到推送消息，获知开奖号码";
     [self.data  addObject:group];
 
 }
