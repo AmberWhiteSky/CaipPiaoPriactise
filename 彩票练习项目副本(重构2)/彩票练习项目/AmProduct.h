@@ -21,6 +21,10 @@
 
 @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *icon;
+@property(nonatomic,copy) NSString *customurl;//打开应用的url
+@property(nonatomic,copy) NSString *url;//下载应用的url
+
+
 
 
 -(instancetype)  initWithDict:(NSDictionary *) dict;

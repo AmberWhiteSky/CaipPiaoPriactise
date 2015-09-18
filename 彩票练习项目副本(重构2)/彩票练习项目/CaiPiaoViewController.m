@@ -28,6 +28,17 @@
     
     //1.具体数据
     SettingItem *mark =[SettingArrowItem  itemWithtitle:@"评分支持" destvcClass:nil];
+    //评分支持
+    mark.option =^{
+        NSString *appid =@"725296055";
+        
+        NSString *str =[NSString  stringWithFormat:@"items-apps://itunes.apple.com/cn/app/id%@?mt=8",appid];
+        
+        
+        NSURL *url =[NSURL  URLWithString:str];
+        [[UIApplication  sharedApplication]openURL:url];
+        
+    };
     SettingItem *call =[SettingArrowItem  itemWithtitle:@"客户电话" destvcClass:nil];
     call.subtitle =@"137612315573";
     call.option =^{

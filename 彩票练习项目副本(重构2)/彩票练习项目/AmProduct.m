@@ -14,6 +14,8 @@
         
         self.icon =dict[@"icon"];
         self.title = dict [@"title"];
+        self.customurl = dict[@"customurl"];
+        self.url =dict[@"url"];
 //        [self  setValuesForKeysWithDictionary:dict];
         
     }

@@ -147,7 +147,21 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
    
     AmProduct *p = self.products[indexPath.item];
+    
+    
+    NSURL *cutomurl =[NSURL  URLWithString:p.customurl];
+    UIApplication *app =[UIApplication  sharedApplication];
+    if ([app  canOpenURL:cutomurl]) {//有安装此应用
+        //打开应用
+        [app openURL:cutomurl];
+    }else{
+    //打开appstore
+        [app  openURL:[NSURL URLWithString:p.url]];
+    }
     NSLog(@"collectionView点击%@", p.title);
+    
+    
+//    [UIApplication   sharedApplication]  openURL:];
 }
 
 #pragma mark <UICollectionViewDelegate>
