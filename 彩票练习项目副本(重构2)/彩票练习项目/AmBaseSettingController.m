@@ -38,6 +38,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //背景色
+    //backgroundView  优先级 大于backgroundColor
+    self.tableView.backgroundView =nil;
+    self.tableView.backgroundColor =[UIColor  colorWithPatternImage:[UIImage  imageNamed:@"bg"]];
 }
 
 

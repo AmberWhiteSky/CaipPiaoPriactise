@@ -30,7 +30,7 @@
         _arrowView =[[UIImageView alloc] initWithImage:[UIImage  imageNamed:@"CellArrow"]];
     }
     return  _arrowView;
-
+    
 }
 //开关懒加载
 -(UISwitch *)switchView {
@@ -40,6 +40,54 @@
         [_switchView  addTarget:self action:@selector(switchStateChange) forControlEvents:UIControlEventValueChanged];
     }
     return _switchView;
+}
+
+//重写init 方法
+
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier  {
+    
+    if (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+        
+        
+        
+        //初始化操作
+        //设置普通的背景‘
+        //        UIView *bg =[[UIView  alloc]init];
+        //        bg.backgroundColor =[UIColor  whiteColor];
+        //        self.backgroundView =bg;
+        //
+        //
+        //
+        
+        
+        [self setUpBg];
+        //初始化子控件
+        [self  setupSubViews];
+    }
+    return self;
+    
+}
+
+-(void)   setupSubViews{
+    self.textLabel.backgroundColor =[UIColor clearColor];
+    self.detailTextLabel.backgroundColor =[UIColor clearColor];
+    
+}
+
+//初始化背景
+-(void) setUpBg {
+    //设置普通的背景‘
+    UIView *bg =[[UIView  alloc]init];
+    bg.backgroundColor =[UIColor  whiteColor];
+    self.backgroundView =bg;
+    //        //设置选中时的背景‘
+    UIView *selectbg =[[UIView  alloc]init];
+    selectbg.backgroundColor =[UIColor  redColor];
+    self.selectedBackgroundView=selectbg;
+    
+    
+    
 }
 
 //监听UISwitch 状态改变的方法
@@ -52,7 +100,7 @@
     if (self.item.switchkey) {
         [defaults  setBool:self.switchView.isOn forKey:self.item.switchkey];
         [defaults synchronize];
-
+        
     }
     
 }
@@ -66,7 +114,7 @@
     }
     
     return _rightlable;
-
+    
 }
 //创建cell
 +(instancetype)  cellWithTableView:(UITableView *) tableview{
@@ -87,7 +135,7 @@
 //        //
 //    }
 //    return self;
-//    
+//
 //}
 
 //设置模型  传递模型 赋值
@@ -104,7 +152,7 @@
     self.textLabel.text =self.item.title;
     //设置子标题
     self.detailTextLabel.text =self.item.subtitle;
-
+    
     
 }
 
@@ -113,7 +161,7 @@
     if (self.item.icon) {
         self.imageView.image =[UIImage imageNamed:self.item.icon];
         self.textLabel.text=self.item.title;
-
+        
     }
     
 }
@@ -135,15 +183,15 @@
         //先判断有没有值，再读取
         if (self.item.switchkey) {
             self.switchView.on = [defaults  boolForKey:self.item.switchkey];
-
+            
         }
-
+        
     }
     else  if([self.item  isKindOfClass:[LableItem class]]){
         //标签
         self.accessoryView =self.rightlable;
         //当是开关的时候判断  点击没有样式
-//        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        //        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
     }
     else {
