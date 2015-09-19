@@ -72,6 +72,8 @@
     GroupSetting * group = self.data[indexPath.section];
     //    SettingItem *item = group.items[indexPath.row];
     cell.item =group.items[indexPath.row];
+    
+    cell.LastRowInSection  = ( group.items.count ==indexPath.row+1);
     //3返回cell
     return cell;
 }

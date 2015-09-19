@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 @class  SettingItem;  //绑定item
 @interface CustomCell : UITableViewCell
+
+
+
 @property(nonatomic,strong) SettingItem *item;
+@property(nonatomic,assign,getter=isLastRowInSection) BOOL LastRowInSection;
 
 
 
-@property(nonatomic,copy)NSString *myname;
+
+//@property(nonatomic,copy)NSString *myname;
 
 
 

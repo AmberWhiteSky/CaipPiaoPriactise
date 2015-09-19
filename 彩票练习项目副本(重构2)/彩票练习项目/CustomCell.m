@@ -19,6 +19,8 @@
 @property(nonatomic,strong) UISwitch  *switchView ;
 /** 标签**/
 @property(nonatomic,strong) UILabel  *rightlable ;
+/** 分割线**/
+@property(nonatomic,weak) UIView  *divider ;
 
 @end
 
@@ -42,32 +44,72 @@
     return _switchView;
 }
 
+
+
+
 //重写init 方法
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier  {
     
     if (self=[super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        
-        
-        
-        
-        //初始化操作
-        //设置普通的背景‘
-        //        UIView *bg =[[UIView  alloc]init];
-        //        bg.backgroundColor =[UIColor  whiteColor];
-        //        self.backgroundView =bg;
-        //
-        //
-        //
-        
-        
         [self setUpBg];
         //初始化子控件
         [self  setupSubViews];
+        //初始化分割线
+        if (![[UIDevice  currentDevice].systemVersion doubleValue]>=7.0)
+        {
+            [self setupDivder];
+        }
     }
     return self;
+}
+
+
+// 不管是谁设置frame    重写拦截系统的操作
+- (void)setFrame:(CGRect)frame {
+    //ios7
+    if ([[UIDevice  currentDevice].systemVersion doubleValue]>=7.0) {
+        frame.size.width+=20;
+        frame.origin.x = -10;
+    }
+    [ super  setFrame:frame];
+}
+
+//分割线是否隐藏
+- (void)setLastRowInSection:(BOOL)LastRowInSection {
+    _LastRowInSection =LastRowInSection;
+    
+    self.divider .hidden =LastRowInSection;
     
 }
+
+//设置子控件的frame
+-(void) layoutSubviews {
+    [super layoutSubviews];
+    
+    if ([[UIDevice  currentDevice].systemVersion doubleValue]>=7.0)  return;
+    
+    //设置分割线frame
+    CGFloat dividerH=1;
+    CGFloat dividerW=[UIScreen mainScreen].bounds.size.width;
+    CGFloat dividerX=0;
+    CGFloat dividerY=self.contentView.frame.size.height-dividerH;
+    self.divider.frame =CGRectMake(dividerX, dividerY, dividerW, dividerH);
+    
+    
+    
+}
+
+
+//设置分割线
+-(void) setupDivder{
+    UIView  *divider = [[UIView  alloc] init];
+    divider.backgroundColor =[UIColor  blackColor];
+    divider.alpha=0.5;
+    [self.contentView  addSubview:divider];
+    self.divider =divider;
+}
+
 
 -(void)   setupSubViews{
     self.textLabel.backgroundColor =[UIColor clearColor];
@@ -171,6 +213,9 @@
     if ([self.item isKindOfClass:[SettingArrowItem class]]) {
         //箭头
         self.accessoryView = self.arrowView;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+        
+        
     }else  if([self.item  isKindOfClass:[SettingSwitchItem class]]){
         //开关
         self.accessoryView =self.switchView;
@@ -190,6 +235,8 @@
     else  if([self.item  isKindOfClass:[LableItem class]]){
         //标签
         self.accessoryView =self.rightlable;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+        
         //当是开关的时候判断  点击没有样式
         //        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
@@ -197,6 +244,8 @@
     else {
         //什么也没有显示
         self.accessoryView =nil;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+        
     }
 }
 @end
